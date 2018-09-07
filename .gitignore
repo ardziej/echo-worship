@@ -16,3 +16,4 @@ package-json.lock
 .env
 package-lock.json
 public/media/*
+!public/media/

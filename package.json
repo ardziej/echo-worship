@@ -11,6 +11,7 @@
     "start": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\"",
     "app": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\" \"yarn run electron\"",
     "s3-sync": "rclone sync -v echo:echo/worship-media ./public/media --exclude '.gitkeep' --exclude '.DS_Store'",
+    "s3-resync": "rm -rf ./public/media && && ls -lha && rclone sync -v echo:echo/worship-media ./public/media --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-sync-remote": "rclone sync -v ./public/media echo:echo/worship-media --exclude '.gitkeep' --exclude '.DS_Store'"
   },
   "author": {
