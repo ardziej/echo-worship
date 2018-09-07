@@ -1,0 +1,372 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Prawdziwa miłość",
+  "text": "ZWROTKA 1\nW Ciebie wpatruję się\nW oczach Twych życie jest\nSerce ożywa znów\nBo jesteś tu\n\nZWROTKA 2\nSięga najdalszych gwiazd\nWielka jest miłość Twa\nNiesamowite, że\nTutaj jest\n\nPRECHORUS\nTwoja miłość prawdziwa\nJest wciąż blisko mnie\nWciąż blisko mnie\nCały czas ją odkrywam \nI więcej jej chcę\nWięcej jej chcę\n\nREFREN 1\nPrawdziwa tak\nJest miłość Twa\n\nREFREN 2\nPrzyciągasz mnie ciągle do siebie\nA moje serce w Twych rękach jest\nDałeś mi wolność bezcenną\nPrawdziwa tak jest miłość Twa\n\nBRIDGE\nOdnalazłeś mnie\nNależę do Ciebie\nNie zawiodę się\nBo jesteś i będziesz",
+  "original": {
+    "title": "Real Love",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "W Ciebie wpatruję się"
+          },
+          {
+            "text": "W oczach Twych życie jest"
+          }
+        ],
+        [
+          {
+            "text": "Serce ożywa znów"
+          },
+          {
+            "text": "Bo jesteś tu"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Sięga najdalszych gwiazd"
+          },
+          {
+            "text": "Wielka jest miłość Twa"
+          }
+        ],
+        [
+          {
+            "text": "Niesamowite, że"
+          },
+          {
+            "text": "Tutaj jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "p",
+      "parts": [
+        [
+          {
+            "text": "Twoja miłość prawdziwa"
+          },
+          {
+            "text": "Jest wciąż blisko mnie"
+          }
+        ],
+        [
+          {
+            "text": "Wciąż blisko mnie"
+          }
+        ],
+        [
+          {
+            "text": "Cały czas ją odkrywam"
+          },
+          {
+            "text": "I więcej jej chcę"
+          }
+        ],
+        [
+          {
+            "text": "Więcej jej chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c1",
+      "parts": [
+        [
+          {
+            "text": "Prawdziwa tak"
+          },
+          {
+            "text": "Jest miłość Twa"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c2",
+      "parts": [
+        [
+          {
+            "text": "Przyciągasz mnie ciągle do siebie"
+          },
+          {
+            "text": "A moje serce w Twych rękach jest"
+          }
+        ],
+        [
+          {
+            "text": "Dałeś mi wolność bezcenną"
+          },
+          {
+            "text": "Prawdziwa tak jest miłość Twa"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Odnalazłeś mnie"
+          },
+          {
+            "text": "Należę do Ciebie"
+          }
+        ],
+        [
+          {
+            "text": "Nie zawiodę się"
+          },
+          {
+            "text": "Bo jesteś i będziesz"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "p",
+      "name": "pre",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "b",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "p",
+      "name": "pre",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c1",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

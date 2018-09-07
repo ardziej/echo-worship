@@ -1,0 +1,203 @@
+doctype html
+html
+    include includes/head.pug
+    body.ui
+        .wrapper
+            .box.header
+                .header__logo
+                    a(href="javascript:window.location.reload(true)")
+                        img(src='/static/assets/images/favicon.png')
+                nav.header__menu
+                    ul.header__nav
+                        li.nav__item
+                            a(href='#/0/1') WE ARE ECHO
+                        li.nav__item
+                            a(href='#/0/2') SERIA
+                        li.nav__item
+                            a(href='#/0/3') INTRO
+                        li.nav__item
+                            a(href='#/0/4') CROSS
+                        li.nav__item
+                            a(href='#/0/0') BLACKOUT
+                        li.nav__item(id='force-reload')
+                            a(href='#') RESET
+            nav.box.sidebar
+                ul.sidebar__nav(id="sidebar__nav")
+                    each navItem, index in sequence
+                        li.sidebar__item
+                            a.sidebar__link(href='#/' + index
+                            data-menu-title=navItem.name
+                            onclick='slideTo(' + index + ')') #{index + 1}) #{navItem.name}
+            .box.preview-master
+                .reveal
+                    .slides
+                        each el in sequence
+                            if el.type === 'slide'
+                                section
+                                    section(data-menu-title=el.name)
+                                        =el.name
+                                    each slideEl in el.slides
+                                        if slideEl.type === 'video'
+                                            section(
+                                            data-menu-title=slideEl.name
+                                            data-background-video=slideEl.path,
+                                            data-background-video-muted,
+                                            data-background-video-loop=(!!slideEl.options[0].loop),
+                                            data-autoplay=(!!slideEl.options[0].autoplay)
+                                            )
+                                        else if slideEl.type === 'image'
+                                            section(
+                                            data-menu-title=slideEl.name
+                                            data-background-image=slideEl.path
+                                            )
+                                        else
+                                            section= slideEl.type
+                            else if el.type === 'song'
+                                section
+                                    include includes/song/new.pug
+            .box.preview-prompter
+                iframe(
+                width="100%"
+                height="100%"
+                src=url + '/prompter')
+
+            .box.content(id="content")
+                each el, index in sequence
+                    if el.type === 'slide'
+                        section(data-menu-title=el.name)
+                            h3.content__header=index + 1 + ') ' + el.name.toUpperCase()
+                        section.content__box(id='sc-' + index)
+                            section.content__blackout.content__blackout--border.content__status(class='slide-' + index + '-0')
+                                a(href='#/' + index)
+                                    img.content__thumbnail.content__thumbnail--full(src='/static/assets/images/black.png')
+                            each slideEl, sIndex in el.slides
+                                - var j = sIndex+1
+                                if slideEl.type === 'video'
+                                    section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            img.content__thumbnail.content__thumbnail--full(src='/static/assets/images/video-thumbnail.png')
+                                            =slideEl.name
+
+                                else if slideEl.type === 'image'
+                                    section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            img.content__thumbnail(src=slideEl.path)
+                                else
+                                    section= slideEl.type
+                    else if el.type === 'song'
+                        section(data-menu-title=el.name)
+                            h3.content__header=index + 1 + ') ' + el.name.toUpperCase()
+                        section.content__box(id='sc-' + index)
+                            section.content__song.content__song--border.content__status(class='slide-' + index + '-0')
+                                a.song__link(href='#/' + index)
+                                    img.content__thumbnail(src='/static/assets/images/black.png')
+                            each verse, i in el.song.prompterSequence
+                                - var n = i + 1
+                                - var slideClass = 'slide-' + index + '-' + n
+                                section.content__song.content__song--border.content__status(class=slideClass)
+                                    a(href='#/' + index + '/' + n)
+                                        span.song__tag='[' + verse.id.toUpperCase() + ']'
+                                        span.song__link
+                                            each part, index in verse
+                                                if index === 'text'
+                                                    each text, j in part
+                                                        =text
+                                                        br
+
+                            section(data-menu-title='fade-out')
+
+            .box.footer
+                ='©2018 ECHO CHURCH'
+
+
+
+
+            include includes/foot.pug
+            script.
+                var uid = Math.random().toString(36).substring(2)
+                console.log(uid);
+                Reveal.initialize({
+                    controls: false,
+                    progress: false,
+                    showNotes: false,
+                    transition: 'none',
+                    width: '100%',
+                    height: '100%',
+                    slideNumber: false,
+                    postMessage: true,
+                    history: true,
+                    touch: false,
+                    overview: false,
+                    autoSlide: false,
+                    multiplex: {
+                        secret: '1522447881274330524',
+                        id: '586c28d7520b3e74',
+                        url: '#{socketIO}',
+                        uid: uid
+                    },
+                    dependencies: [
+                        //{src: '/static/plugin/menu/menu.js'},
+                        {src: '/static/assets/javascripts/socket.io.js', async: true},
+                        {src: '/static/assets/javascripts/socket-io/master.js', async: true}
+                    ],
+                    keyboard: {
+                        13: 'next', // go to the next slide when the ENTER key is pressed
+                        27: function () {
+                            Reveal.slide(0, 0, 0);
+                        }, // do something custom when ESC is pressed
+                        48: function () {
+                            Reveal.slide(0, 2, 0);
+                        } // do something custom when ESC is pressed
+                    }
+                })
+            script.
+                let btnContainer = document.getElementById("content");
+                let btns = btnContainer.getElementsByClassName("content__status");
+
+                function setCurrentSlide(state) {
+                    let currentSlide = btnContainer.getElementsByClassName("slide-" + state.h + "-" + state.v)
+                    for (let i = 0; i < btns.length; i++) {
+                        let current = document.getElementsByClassName("active");
+
+                        if (current.length > 0) {
+                            current[0].className = current[0].className.replace(" active", "");
+                        }
+
+                        currentSlide[0].className += " active";
+                    }
+                }
+
+                Reveal.addEventListener('slidechanged', function (event) {
+                    let state = Reveal.getIndices()
+                    setCurrentSlide(state)
+                    let isAutoSliding = Reveal.isAutoSliding()
+                    console.log('isAutoSliding: ' + isAutoSliding)
+                })
+
+                function slideTo(slide) {
+                    let slideToEl = document.getElementById("sc-" + slide)
+                    slideToEl.scrollIntoView()
+                }
+
+                Reveal.addEventListener('ready', function () {
+                    //Reveal.configure({autoSlide: false})
+                    Reveal.toggleAutoSlide()
+                })
+
+                let navContainer = document.getElementById("sidebar__nav");
+                let links = navContainer.getElementsByClassName("sidebar__link");
+
+                links.addEventListener("click", function () {
+                    let slideToEl = document.getElementById("sc-2");
+                    slideToEl.scrollIntoView();
+
+                    //var current = document.getElementsByClassName("active");
+
+                    // If there's no active class
+                    if (current.length > 0) {
+                        // current[0].className = current[0].className.replace(" active", "");
+                    }
+
+                    // Add the active class to the current/clicked button
+                    this.className += " active";
+                });

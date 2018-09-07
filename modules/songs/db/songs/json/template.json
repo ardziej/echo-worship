@@ -1,0 +1,85 @@
+{
+  "id": "",
+  "title": "Tytuł",
+  "text": "",
+  "original": {
+    "title": "Title",
+    "author": "",
+    "album": "",
+    "ccliNo": "",
+    "copyright": "",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Ze wszystkich stron otaczasz mnie"
+          },
+          {
+            "text": "Obejmujesz łaską swą"
+          }
+        ],
+        [
+          {
+            "text": "Poddaję się miłości Twej"
+          },
+          {
+            "text": "Tak przyciąga mnie jej głos"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": null,
+    "seconds": null
+  },
+  "bpm": null,
+  "media": {
+    "youtube": "",
+    "spotify": ""
+  }
+}

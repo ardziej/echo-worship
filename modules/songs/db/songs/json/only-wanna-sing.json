@@ -1,0 +1,167 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Tylko śpiewać chcę",
+  "text": "",
+  "original": {
+    "title": "Only Wanna Sing",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "32760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Nie, nie chodzi o mnie"
+          },
+          {
+            "text": "Jestem tu dla Ciebie"
+          },
+          {
+            "text": "Nie chcę śpiewać pustych słów"
+          }
+        ],
+        [
+          {
+            "text": "Nie, nie szukam wrażeń"
+          },
+          {
+            "text": "Szukam Ciebie, Panie"
+          },
+          {
+            "text": "Przyjmij chwałę z moich ust"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Ja tylko śpiewać chcę"
+          },
+          {
+            "text": "Jeśli z tego cieszysz się"
+          },
+          {
+            "text": "Jeśli to uwielbia Cię"
+          }
+        ],
+        [
+          {
+            "text": "Sam śpiew nie znaczy nic"
+          },
+          {
+            "text": "Jeśli serca nie ma w nim"
+          },
+          {
+            "text": "Najważniejszy jesteś Ty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Nie chcesz ideału"
+          },
+          {
+            "text": "Tylko duszę całą"
+          },
+          {
+            "text": "To, co mam, oddaję Ci"
+          }
+        ],
+        [
+          {
+            "text": "Nie tylko śpiewem, co trwa przez chwilę"
+          },
+          {
+            "text": "A całym życiem chcę wielbić Ciebie"
+          }
+        ],
+        [
+          {
+            "text": "Jeśli mam śpiewać, to w jednym celu"
+          },
+          {
+            "text": "Wszelka chwała, Panie, Twoja jest"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

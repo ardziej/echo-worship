@@ -1,0 +1,13 @@
+doctype html
+html
+    include includes/head.pug
+    body.tv
+
+        ={'Id'}
+
+
+
+        include includes/foot.pug
+        script.
+            let uid = Math.random().toString(36).substring(2);
+            console.log(uid);

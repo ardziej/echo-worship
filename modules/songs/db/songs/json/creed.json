@@ -1,0 +1,293 @@
+{
+  "id": "2aycc252-12e5-4194-9531-9633938fd9fb",
+  "title": "This I Belive",
+  "text": "ZWROTKA 1\nNasz Ojcze nieskończony\nWszystko stworzyłeś Ty\nWszechmogący\nŚwiętego Ducha mocą\nPoczęty został Syn\nJezus, nasz Zbawca\n\nREFREN 1\nTak, ja wierzę w Boga Ojca\nW Syna, którym Jezus jest\nWierzę też w Świętego Ducha\nBóg jest w osobach trzech\nWierzę także w zmartwychwstanie\nŻe powstaniemy znów\nWyznaję to: Wierzę w imię Jezus\n\nZWROTKA 2\nNasz Sędzio, nasz Obrońco\nCierpiałeś za nasz grzech\nA nam przebaczono\nTy zszedłeś do ciemności\nI w chwale wzniosłeś się\nZająłeś w niebie tron\n\nBRIDGE\nWierzę, że Bóg jest\nWierzę, że pokonał śmierć\nWierzę, że to Chrystus Panem jest\n\nREFREN 2\nWierzę, że jest życie wieczne\nŻe na ziemię przyszedł Bóg\nWierzę we wspólnotę świętych\nI święty Kościół Twój\nWierzę w nasze zmartwychwstanie\nGdy Jezus przyjdzie znów\nWyznaję to: Wierzę w imię Jezus",
+  "original": {
+    "title": "This I Belive",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Nasz Ojcze nieskończony"
+          },
+          {
+            "text": "Wszystko stworzyłeś Ty"
+          },
+          {
+            "text": "Wszechmogący"
+          }
+        ],
+        [
+          {
+            "text": "Świętego Ducha mocą"
+          },
+          {
+            "text": "Poczęty został Syn"
+          },
+          {
+            "text": "Jezus, nasz Zbawca"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c1",
+      "parts": [
+        [
+          {
+            "text": "Tak, ja wierzę w Boga Ojca"
+          },
+          {
+            "text": "W Syna, którym Jezus jest"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę też w Świętego Ducha"
+          },
+          {
+            "text": "Bóg jest w osobach trzech"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę także w zmartwychwstanie"
+          },
+          {
+            "text": "Że powstaniemy znów"
+          }
+        ],
+        [
+          {
+            "text": "Wyznaję to: Wierzę w imię Jezus"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Nasz Sędzio, nasz Obrońco"
+          },
+          {
+            "text": "Cierpiałeś za nasz grzech"
+          },
+          {
+            "text": "A nam przebaczono"
+          }
+        ],
+        [
+          {
+            "text": "Ty zszedłeś do ciemności"
+          },
+          {
+            "text": "I w chwale wzniosłeś się"
+          },
+          {
+            "text": "Zająłeś w niebie tron"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Wierzę, że Bóg jest"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę, że pokonał śmierć"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę, że to Chrystus Panem jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c2",
+      "parts": [
+        [
+          {
+            "text": "Wierzę, że jest życie wieczne"
+          },
+          {
+            "text": "Że na ziemię przyszedł Bóg"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę we wspólnotę świętych"
+          },
+          {
+            "text": "I święty Kościół Twój"
+          }
+        ],
+        [
+          {
+            "text": "Wierzę w nasze zmartwychwstanie"
+          },
+          {
+            "text": "Gdy Jezus przyjdzie znów"
+          }
+        ],
+        [
+          {
+            "text": "Wyznaję to: Wierzę w imię Jezus"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "post-c",
+      "parts": [
+        [
+          {
+            "text": "Wyznaję to: Wierzę w imię Jezus"
+          }
+        ],
+        [
+          {
+            "text": "Wyznaję to: Wierzę w imię Jezus"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Refren 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Refren 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Refren 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Refren 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "post-c",
+      "name": "Po Refren 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

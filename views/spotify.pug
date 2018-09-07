@@ -1,0 +1,12 @@
+doctype html
+html
+    include includes/head.pug
+    body.spotify
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:edajuk:playlist:4yg1JRbAhXo1vIkD5FJbQM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+
+        include includes/foot.pug
+        script.
+            let uid = Math.random().toString(36).substring(2);
+            console.log(uid);

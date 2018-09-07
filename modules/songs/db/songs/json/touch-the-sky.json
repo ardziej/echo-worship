@@ -1,0 +1,173 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Touch The Sky",
+  "text": "",
+  "original": {
+    "title": "Touch The Sky",
+    "author": "Hillsong",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Co kryje się nad niebem gwiazd"
+          },
+          {
+            "text": "Gdzie niezdobytych szczytów blask"
+          }
+        ],
+        [
+          {
+            "text": "Choć przyszło mi z wysoka spaść"
+          },
+          {
+            "text": "Na dole niebo znalazło mnie"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Serca bicie, moje życie"
+          },
+          {
+            "text": "Znajduję, gdy wszystko daję Ci"
+          }
+        ],
+        [
+          {
+            "text": "Znowu spadam na kolana"
+          },
+          {
+            "text": "Dosięgam Cię, kiedy uniżam się"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Co kryją blizny Twoich ran"
+          },
+          {
+            "text": "Wolności Twej bezcenny dar"
+          }
+        ],
+        [
+          {
+            "text": "Gdy moje serce kupił świat"
+          },
+          {
+            "text": "Oddałeś niebo, by wykupić mnie"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Jestem tu, znów u Twoich stóp"
+          },
+          {
+            "text": "Całym sercem już"
+          }
+        ],
+        [
+          {
+            "text": "Ja należę do Ciebie"
+          },
+          {
+            "text": "Miłością swą znów ogarnij mnie"
+          }
+        ],
+        [
+          {
+            "text": "Moja dusza chce"
+          },
+          {
+            "text": "Tańczyć do rytmu nieba"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

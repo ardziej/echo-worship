@@ -1,0 +1,115 @@
+doctype html
+html
+    include includes/head.pug
+    script.
+        localStorage.clear()
+    body.prompter
+        #clock
+        #countdown
+        .reveal
+            .slides
+                each el, i in sequence
+                    if el.type === 'slide'
+                        section(
+                        data-state=(el.prompter.countdown ? "prompter-slide" : "normal")
+                        data-time=(el.prompter.countdown ? el.prompter.countdown : 0)
+                        )
+                            if el.prompter.countdown
+                                script.
+                                    (function () {
+                                        localStorage.setItem('prompter-#{i}', #{el.prompter.countdown})
+                                    })()
+
+                            section
+                            each slideEl in el.slides
+                                if slideEl.type === 'video'
+                                    section=slideEl.name
+                                else if slideEl.type === 'image'
+                                    section(data-background-image=slideEl.path)
+                                else
+                                    section= slideEl.type
+
+                    else if el.type === 'song'
+                        section(
+                        data-state="normal"
+                        )
+                            include includes/song/prompter.pug
+
+
+
+        include includes/foot.pug
+
+        script.
+            let uid = Math.random().toString(36).substring(2)
+            //console.log(uid)
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                keyboard: true,
+                touch: false,
+                // Transition style
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                center: true,
+                width: '100%',
+                height: '100%',
+                minScale: 0.7,
+                maxScale: 0.9,
+                history: true,
+                overview: false,
+                multiplex: {
+                    secret: null,
+                    id: '586c28d7520b3e74',
+                    url: '#{socketIO}',
+                    uid: uid
+                },
+                dependencies: [
+                    {src: '/static/assets/javascripts/socket.io.js', async: true},
+                    {src: '/static/assets/javascripts/socket-io/client.js', async: true}
+                ]
+            })
+            Reveal.addEventListener('prompter-slide', function () {
+                let el = document.querySelector("#countdown")
+                el.style.display = 'block'
+
+                let state = Reveal.getState()
+                let timeToInit = localStorage.getItem('prompter-' + state.indexh)
+                console.log(timeToInit)
+                c(timeToInit, state.indexh)
+            }, false)
+            Reveal.addEventListener('normal', function () {
+                let el = document.querySelector("#countdown")
+                el.style.display = 'none'
+                cs()
+            }, false)
+            Reveal.addEventListener('slidechanged', function (event) {
+                //console.log(event.currentSlide)
+                //let currentSlide = document.querySelector(".reveal .slides .present")
+                //let n = currentSlide.data-state
+                //console.log(currentSlide)
+                // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+            })
+            Reveal.addEventListener('ready', function (event) {
+                console.log('READY')
+                var e = new Event("keydown");
+                e.key = "f";    // just enter the char you want to send
+                e.keyCode = e.key.charCodeAt(0);
+                e.which = e.keyCode;
+                e.altKey = false;
+                e.ctrlKey = true;
+                e.shiftKey = false;
+                e.metaKey = false;
+                e.bubbles = true;
+                document.dispatchEvent(e);
+                console.log('F')
+                //Reveal.enterFullscreen();
+                // event.currentSlide, event.indexh, event.indexv
+            });
+
+        script(src='/static/assets/javascripts/prompter.js')

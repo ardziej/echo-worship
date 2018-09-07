@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'AvenirM';
+    src: url('AvenirNextCyrMedium.eot');
+    src: url('AvenirNextCyrMedium.eot') format('embedded-opentype'),
+         url('AvenirNextCyrMedium.woff2') format('woff2'),
+         url('AvenirNextCyrMedium.woff') format('woff'),
+         url('AvenirNextCyrMedium.ttf') format('truetype'),
+         url('AvenirNextCyrMedium.svg#AvenirNextCyrMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirUL';
+    src: url('AvenirNextCyrUltraLight.eot');
+    src: url('AvenirNextCyrUltraLight.eot') format('embedded-opentype'),
+         url('AvenirNextCyrUltraLight.woff2') format('woff2'),
+         url('AvenirNextCyrUltraLight.woff') format('woff'),
+         url('AvenirNextCyrUltraLight.ttf') format('truetype'),
+         url('AvenirNextCyrUltraLight.svg#AvenirNextCyrUltraLight') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirL';
+    src: url('AvenirNextCyrLight.eot');
+    src: url('AvenirNextCyrLight.eot') format('embedded-opentype'),
+         url('AvenirNextCyrLight.woff2') format('woff2'),
+         url('AvenirNextCyrLight.woff') format('woff'),
+         url('AvenirNextCyrLight.ttf') format('truetype'),
+         url('AvenirNextCyrLight.svg#AvenirNextCyrLight') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirB';
+    src: url('AvenirNextCyrBold.eot');
+    src: url('AvenirNextCyrBold.eot') format('embedded-opentype'),
+         url('AvenirNextCyrBold.woff2') format('woff2'),
+         url('AvenirNextCyrBold.woff') format('woff'),
+         url('AvenirNextCyrBold.ttf') format('truetype'),
+         url('AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirT';
+    src: url('AvenirNextCyrThin.eot');
+    src: url('AvenirNextCyrThin.eot') format('embedded-opentype'),
+         url('AvenirNextCyrThin.woff2') format('woff2'),
+         url('AvenirNextCyrThin.woff') format('woff'),
+         url('AvenirNextCyrThin.ttf') format('truetype'),
+         url('AvenirNextCyrThin.svg#AvenirNextCyrThin') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirSB';
+    src: url('AvenirNextCyrDemi.eot');
+    src: url('AvenirNextCyrDemi.eot') format('embedded-opentype'),
+         url('AvenirNextCyrDemi.woff2') format('woff2'),
+         url('AvenirNextCyrDemi.woff') format('woff'),
+         url('AvenirNextCyrDemi.ttf') format('truetype'),
+         url('AvenirNextCyrDemi.svg#AvenirNextCyrDemi') format('svg');
+}
+
+
+
+

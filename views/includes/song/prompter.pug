@@ -1,0 +1,42 @@
+section
+    = el.song.title
+    hr
+    p.next-verse
+        each val, ind in el.song.prompterSequence[0]
+            if ind === 'text'
+                each t, k in val
+                    =t
+                    br
+            else
+                span.verse-id
+                    ='[' + val + ']'
+                    br
+
+- var sl = el.song.prompterSequence.length
+each verse, i in el.song.prompterSequence
+    section
+        each part, index in verse
+            if index === 'text'
+                each text, j in part
+                    =text
+                    br
+            else
+                p.verse-id
+                    ='[' + part + ']'
+
+        hr
+        - var n = i + 1
+        if n < sl
+            - var next = el.song.prompterSequence[n]
+            p.next-verse
+                each val, ind in next
+                    if ind === 'text'
+                        each t, k in val
+                            =t
+                            br
+                    else
+                        span.verse-id
+                            ='[' + val + ']'
+                            br
+
+section(data-menu-title='fade-out')

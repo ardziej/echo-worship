@@ -1,0 +1,78 @@
+doctype html
+html
+    include includes/head.pug
+    body.master
+        .reveal
+            .slides
+                each el in sequence
+                    if el.type === 'slide'
+                        section
+                            section(data-menu-title=el.name)
+                                =el.name
+                            each slideEl in el.slides
+                                if slideEl.type === 'video'
+                                    section(
+                                    data-menu-title=slideEl.name
+                                    data-background-video=slideEl.path,
+                                    data-background-video-muted,
+                                    data-background-video-loop=(!!slideEl.options[0].loop),
+                                    data-autoplay=(!!slideEl.options[0].autoplay)
+                                    )
+                                else if slideEl.type === 'image'
+                                    section(
+                                    data-menu-title=slideEl.name
+                                    data-background-image=slideEl.path
+                                    )
+                                else
+                                    section= slideEl.type
+                    else if el.type === 'song'
+                        section
+                            include includes/song/master.pug
+
+
+
+        include includes/foot.pug
+        script.
+            var uid = Math.random().toString(36).substring(2);
+            console.log(uid);
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                showNotes: true,
+                transition: 'none',
+                width: '100%',
+                height: '100%',
+                slideNumber: true,
+                postMessage: true,
+                history: true,
+                touch: false,
+                multiplex: {
+                    secret: '1522447881274330524',
+                    id: '586c28d7520b3e74',
+                    url: '#{socketIO}',
+                    uid: uid
+                },
+                dependencies: [
+                    {src: '/static/plugin/menu/menu.js'},
+                    {src: '/static/assets/javascripts/socket.io.js', async: true},
+                    {src: '/static/assets/javascripts/socket-io/master.js', async: true}
+                ],
+                menu: {
+                    side: 'left',
+                    numbers: false,
+                    titleSelector: 'h1, h2, h3, h4, h5, h6',
+                    useTextContentForMissingTitles: false,
+                    hideMissingTitles: false,
+                    markers: true,
+                    custom: false,
+                    themes: false,
+                    transitions: false,
+                    openButton: false,
+                    openSlideNumber: false,
+                    keyboard: true,
+                    sticky: true,
+                    autoOpen: true,
+                    delayInit: false,
+                    loadIcons: true
+                }
+            })

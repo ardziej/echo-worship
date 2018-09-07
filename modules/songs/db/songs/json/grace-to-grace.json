@@ -1,0 +1,360 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Grace To Grace",
+  "text": "",
+  "original": {
+    "title": "Grace To Grace",
+    "author": "Hillsong",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Skoro miłość zniosła śmierć"
+          }
+        ],
+        [
+          {
+            "text": "Jak cenna jest Jezusa krew"
+          }
+        ],
+        [
+          {
+            "text": "Gdy piękno nieba skryło mój wstyd"
+          }
+        ],
+        [
+          {
+            "text": "Obrazem miłości był Twój krzyż"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c1",
+      "parts": [
+        [
+          {
+            "text": "Uznałeś, że warto znieść ten ból"
+          }
+        ],
+        [
+          {
+            "text": "Z radością patrzyłeś poza grób"
+          }
+        ],
+        [
+          {
+            "text": "Uznałeś, że warto znieść tę śmierć"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Cudowny tak"
+          }
+        ],
+        [
+          {
+            "text": "Wspaniały tak"
+          }
+        ],
+        [
+          {
+            "text": "Moc Twoich ran"
+          }
+        ],
+        [
+          {
+            "text": "Zwycięża świat"
+          }
+        ],
+        [
+          {
+            "text": "Mój cały dług"
+          }
+        ],
+        [
+          {
+            "text": "Spłacony już"
+          }
+        ],
+        [
+          {
+            "text": "I żyję znów"
+          }
+        ],
+        [
+          {
+            "text": "Przez łaski cud"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Na zawsze już pusty Jego grób"
+          }
+        ],
+        [
+          {
+            "text": "Jak wielką nadzieją jest nasz Bóg"
+          }
+        ],
+        [
+          {
+            "text": "Pasja przebiła piekło na wskroś"
+          }
+        ],
+        [
+          {
+            "text": "Śmierć pokonana, zwycięzcą On"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c2",
+      "parts": [
+        [
+          {
+            "text": "Oddałeś swą wolność za mnie"
+          }
+        ],
+        [
+          {
+            "text": "Więc gdzie jest mój wstyd i gdzie mój grzech"
+          }
+        ],
+        [
+          {
+            "text": "Miłością zdobyłeś serce me"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Kiedy widzę krzyż, widzę wolność"
+          }
+        ],
+        [
+          {
+            "text": "Gdy zobaczę grób, będę z Tobą"
+          }
+        ],
+        [
+          {
+            "text": "I przez życie wieczne uwielbię Cię"
+          }
+        ],
+        [
+          {
+            "text": "Doświadczając łaski Twej"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "tag",
+      "parts": [
+        [
+          {
+            "text": "Moja dusza wielbi Cię"
+          }
+        ],
+        [
+          {
+            "text": "Doświadczając łaski Twej"
+          }
+        ],
+        [
+          {
+            "text": "Moja dusza wielbi Cię"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c1",
+      "name": "PRECHORUS 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c2",
+      "name": "PRECHORUS 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "tag",
+      "name": "TAG",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "tag",
+      "name": "TAG",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

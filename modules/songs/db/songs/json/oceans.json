@@ -1,0 +1,533 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Oceans",
+  "text": "",
+  "original": {
+    "title": "Oceans",
+    "author": "Hillsong",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Znad oceanów do mnie wołasz"
+          },
+          {
+            "text": "Gdzie każdy krok niepewny jest"
+          }
+        ],
+        [
+          {
+            "text": "Ty jesteś tam, gdzie niewiadoma"
+          },
+          {
+            "text": "Tam znajdę grunt dla wiary mej"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Mój strach utonie w Twojej łasce"
+          },
+          {
+            "text": "Bo ręka Twa prowadzi mnie"
+          }
+        ],
+        [
+          {
+            "text": "I Ty mnie nigdy nie zawiodłeś"
+          },
+          {
+            "text": "Wiem, teraz też nie zawiedziesz mnie"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "p",
+      "parts": [
+        [
+          {
+            "text": "Twoja miłość prawdziwa"
+          },
+          {
+            "text": "Jest wciąż blisko mnie"
+          }
+        ],
+        [
+          {
+            "text": "Wciąż blisko mnie"
+          }
+        ],
+        [
+          {
+            "text": "Cały czas ją odkrywam"
+          },
+          {
+            "text": "I więcej jej chcę"
+          }
+        ],
+        [
+          {
+            "text": "Więcej jej chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c1",
+      "parts": [
+        [
+          {
+            "text": "Będę wzywać imię Twe"
+          }
+        ],
+        [
+          {
+            "text": "I ponad fale patrzeć chcę"
+          },
+          {
+            "text": "Gdy burzą się"
+          }
+        ],
+        [
+          {
+            "text": "Mej duszy pokój w Tobie jest"
+          },
+          {
+            "text": "Gdzie pójdziesz Ty, ja pójdę też"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pc1",
+      "parts": [
+        [
+          {
+            "text": "Ja pójdę też"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c2",
+      "parts": [
+        [
+          {
+            "text": "Będę wzywać imię Twe"
+          },
+          {
+            "text": "I ponad fale patrzeć chcę"
+          }
+        ],
+        [
+          {
+            "text": "Mej duszy pokój w Tobie jest"
+          },
+          {
+            "text": "Gdzie pójdziesz Ty, ja pójdę też"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b1",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b2",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b3",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b4",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b5",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b6",
+      "parts": [
+        [
+          {
+            "text": "Duchu, prowadź mnie"
+          },
+          {
+            "text": "Gdzie wiara nie ma granic"
+          }
+        ],
+        [
+          {
+            "text": "Daj mi chodzić nad wodami"
+          },
+          {
+            "text": "Gdziekolwiek mnie prowadzisz"
+          }
+        ],
+        [
+          {
+            "text": "Weź mnie głębiej niż"
+          },
+          {
+            "text": "Pójść mogą moje stopy"
+          }
+        ],
+        [
+          {
+            "text": "Moja wiara się umocni"
+          },
+          {
+            "text": "W Twojej obecności"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c1",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pc1",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b1",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b2",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b3",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b4",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b5",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b6",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "id": "b92cc252-12e5-4194-9531-9633938fd9fc",
+  "title": "Nawet kiedy czuję ból",
+  "text": "",
+  "original": {
+    "title": "Even When It Hurts",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "32760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Przyjmij serce me"
+          },
+          {
+            "text": "Ręce moje weź"
+          }
+        ],
+        [
+          {
+            "text": "Chcę w miłości Twej"
+          },
+          {
+            "text": "Znów zanurzyć się"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c1",
+      "parts": [
+        [
+          {
+            "text": "Nawet kiedy nie mam sił"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Nawet kiedy trudno mi"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Nawet kiedy brak mi słów, chcę żyć"
+          },
+          {
+            "text": "Jeszcze głośniej wielbiąc Cię"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Tylko Ciebie wielbić chcę"
+          }
+        ],
+        [
+          {
+            "text": "Tylko Ciebie wielbić chcę"
+          }
+        ],
+        [
+          {
+            "text": "Tylko Ciebie wielbić chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Weź to morze łez"
+          },
+          {
+            "text": "Cały ciężar weź"
+          }
+        ],
+        [
+          {
+            "text": "Mocno trzymaj mnie"
+          },
+          {
+            "text": "Przyjdź znów w łasce swej"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c2",
+      "parts": [
+        [
+          {
+            "text": "Nawet gdy przegrywam bój"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Nawet kiedy czuję ból"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Kiedy nie ma sensu już mój śpiew"
+          },
+          {
+            "text": "Jeszcze głośniej śpiewać chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Twoim ogniem płonie mój duch"
+          },
+          {
+            "text": "Tylko Ty, tylko Ciebie chcę"
+          }
+        ],
+        [
+          {
+            "text": "Moja dusza pragnie Twych słów"
+          },
+          {
+            "text": "Śpiewam Ci, aż nadejdzie dzień znów"
+          }
+        ],
+        [
+          {
+            "text": "Twoim ogniem płonie mój duch"
+          },
+          {
+            "text": "Tylko Ty, tylko Ciebie chcę"
+          }
+        ],
+        [
+          {
+            "text": "Moja dusza pragnie Twych słów"
+          },
+          {
+            "text": "Śpiewam Ci, aż wydarzy się cud"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c3",
+      "parts": [
+        [
+          {
+            "text": "Nawet gdy nadejdzie dzień"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Kiedy wygram bitwy me"
+          },
+          {
+            "text": "Chcę wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Gdy mój czas na ziemi skończy się"
+          },
+          {
+            "text": "Będę głośniej wielbić Cię"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "t",
+      "parts": [
+        [
+          {
+            "text": "Tylko Ciebie wielbić chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c1",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c2",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c3",
+      "name": "pre-c3",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "t",
+      "name": "tag",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

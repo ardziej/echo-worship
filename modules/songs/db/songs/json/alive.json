@@ -1,0 +1,265 @@
+{
+  "id": "2aycc252-12e5-4194-9531-9633938fd9fb",
+  "title": "Żyjesz w nas",
+  "text": "ZWROTKA 1\nZ nocy złej, z oceanu łez\nWyrwałeś mnie, dałeś nowy cel\nTeraz wiem, co to znaczy żyć\nNa zawsze już w Twoich rękach być\n\nZWROTKA 2\nNie ma słów, by opisać Cię\nPrzez wszystkie dni biec za Tobą chcę\nTwoich dróg będę trzymać się\nBo wolność mam dzięki łasce Twej\n\nPRE-CHORUS\nBo Twoje, Twoje imię wolnością\nWielbimy Ciebie, wielbimy Ciebie\nTwoja, Twoja miłość nieskończona\n\nREFREN\nTy żyjesz w nas, Jezu\nNikt nie zastąpi Cię\nTy dałeś nam niebo\nMiłość zmazała grzech\n\nZWROTKA 3\nNawet gdy wokół ciemna noc\nNiech świeci w niej Twej miłości moc\nI zrywa to, co mnie wiązać chce\nBo Boży Syn już uwolnił mnie\n\nZWROTKA 4\nZniknie to, co ze świata jest\nNie poddam się, chcę zobaczyć Cię\nBędę żyć tak, jak tego chcesz\nModlę się: Przyjdź Królestwo Twe",
+  "original": {
+    "title": "Alive",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Z nocy złej, z oceanu łez"
+          },
+          {
+            "text": "Wyrwałeś mnie, dałeś nowy cel"
+          }
+        ],
+        [
+          {
+            "text": "Teraz wiem, co to znaczy żyć"
+          },
+          {
+            "text": "Na zawsze już w Twoich rękach być"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Nie ma słów, by opisać Cię"
+          },
+          {
+            "text": "Przez wszystkie dni biec za Tobą chcę"
+          }
+        ],
+        [
+          {
+            "text": "Twoich dróg będę trzymać się"
+          },
+          {
+            "text": "Bo wolność mam dzięki łasce Twej"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c",
+      "parts": [
+        [
+          {
+            "text": "Bo Twoje, Twoje imię wolnością"
+          },
+          {
+            "text": "Wielbimy Ciebie, wielbimy Ciebie"
+          },
+          {
+            "text": "Twoja, Twoja miłość nieskończona"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Ty żyjesz w nas, Jezu"
+          },
+          {
+            "text": "Nikt nie zastąpi Cię"
+          }
+        ],
+        [
+          {
+            "text": "Ty dałeś nam niebo"
+          },
+          {
+            "text": "Miłość zmazała grzech"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v3",
+      "parts": [
+        [
+          {
+            "text": "Nawet gdy wokół ciemna noc"
+          },
+          {
+            "text": "Niech świeci w niej Twej miłości moc"
+          }
+        ],
+        [
+          {
+            "text": "I zrywa to, co mnie wiązać chce"
+          },
+          {
+            "text": "Bo Boży Syn już uwolnił mnie"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v4",
+      "parts": [
+        [
+          {
+            "text": "Zniknie to, co ze świata jest"
+          },
+          {
+            "text": "Nie poddam się, chcę zobaczyć Cię"
+          }
+        ],
+        [
+          {
+            "text": "Będę żyć tak, jak tego chcesz"
+          },
+          {
+            "text": "Modlę się: Przyjdź Królestwo Twe"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Pre chorous",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "v3",
+      "name": "Zwrotka 3",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "v4",
+      "name": "Zwrotka 4",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Pre chorous",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Pre chorous",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": 0,
+        "seconds": 0
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

@@ -1,0 +1,11 @@
+section(data-menu-title=el.name)
+    =section
+each verse, i in el.song.prompterSequence
+    section(data-autoslide="2000")
+        each part, index in verse
+            if index === 'text'
+                each text, j in part
+                    =text
+                    br
+
+section(data-menu-title='fade-out')

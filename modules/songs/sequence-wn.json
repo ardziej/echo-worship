@@ -1,0 +1,303 @@
+[
+  {
+    "id": "1",
+    "name": "START",
+    "type": "slide",
+    "notes": "START!",
+    "slides": [
+      {
+        "type": "image",
+        "name": "WE ARE ECHO",
+        "path": "/static/media/images/echo/weareecho.jpg",
+        "notes": "WE ARE ECHO"
+      },
+      {
+        "type": "image",
+        "name": "AKTUALNA SERIA",
+        "path": "/static/media/images/series.jpg",
+        "notes": "AKTUALNA SERIA"
+      },
+      {
+        "type": "image",
+        "name": "INTRO ECHO",
+        "path": "/static/media/images/echo/intro.jpg",
+        "notes": "INTRO ECHO"
+      },
+      {
+        "type": "image",
+        "name": "ECHO",
+        "path": "/static/media/images/echo/main.jpg",
+        "notes": "ECHO"
+      },
+      {
+        "type": "image",
+        "name": "ECHO CROSS TOP",
+        "path": "/static/media/images/echo/cross-top.jpg",
+        "notes": "ECHO CROSS TOP"
+      },
+      {
+        "type": "image",
+        "name": "ECHO CROSS CENTER",
+        "path": "/static/media/images/echo/cross-center.jpg",
+        "notes": "ECHO CROSS CENTER"
+      }
+    ],
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "2",
+    "name": "COUNTDOWN",
+    "type": "slide",
+    "notes": "COUNTDOWN",
+    "slides": [
+      {
+        "type": "video",
+        "name": "COUNTDOWN",
+        "path": "/static/media/videos/countdown.mp4",
+        "notes": "COUNTDOWN",
+        "options": [
+          {
+            "autoplay": true,
+            "loop": false,
+            "mute": false
+          }
+        ]
+      }
+    ],
+    "prompter": {
+      "countdown": 367
+    }
+  },
+  {
+    "id": "3",
+    "name": "Let Go",
+    "type": "song",
+    "notes": "Let Go",
+    "path": "./db/songs/json/let-go.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "When The Fight Calls",
+    "type": "song",
+    "notes": "When The Fight Calls",
+    "path": "./db/songs/json/when-the-fight-calls.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "So Will I",
+    "type": "song",
+    "notes": "So Will I",
+    "path": "./db/songs/json/so-will-i.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "Reckless Love",
+    "type": "song",
+    "notes": "Reckless Love",
+    "path": "./db/songs/json/en/reckless-love.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "As It Is",
+    "type": "song",
+    "notes": "As It Is",
+    "path": "./db/songs/json/as-it-is.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "Grace to grace",
+    "type": "song",
+    "notes": "Grace to grace",
+    "path": "./db/songs/json/grace-to-grace.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "Anastasis",
+    "type": "song",
+    "notes": "Anastasis",
+    "path": "./db/songs/json/anastasis.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "What a Beautiful Name",
+    "type": "song",
+    "notes": "What a Beautiful Name",
+    "path": "./db/songs/json/what-a-beautiful-name.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "Tremble",
+    "type": "song",
+    "notes": "Tremble",
+    "path": "./db/songs/json/en/tremble.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "No Other Name",
+    "type": "song",
+    "notes": "No Other Name",
+    "path": "./db/songs/json/no-other-name.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "Real Love",
+    "type": "song",
+    "notes": "Real Love",
+    "path": "./db/songs/json/real-love.json",
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "9",
+    "name": "OGŁOSZENIA",
+    "type": "slide",
+    "notes": "OGŁOSZENIA",
+    "slides": [
+      {
+        "type": "image",
+        "name": "KARTY PROSZĘ/DZIĘKUJĘ",
+        "path": "/static/media/images/cards.jpg",
+        "notes": "KARTY PROSZĘ/DZIĘKUJĘ"
+      },
+      {
+        "type": "image",
+        "name": "MODLITWA",
+        "path": "/static/media/images/prayer.jpg",
+        "notes": "MODLITWA"
+      },
+      {
+        "type": "image",
+        "name": "ECHO TEAM",
+        "path": "/static/media/images/echo-team.jpg",
+        "notes": "ECHO TEAM"
+      },
+      {
+        "type": "image",
+        "name": "HELLO TEAM",
+        "path": "/static/media/images/hello-team.jpg",
+        "notes": "HELLO TEAM"
+      },
+      {
+        "type": "image",
+        "name": "HELLO TEAM 2",
+        "path": "/static/media/images/hello-team-2.jpg",
+        "notes": "HELLO TEAM 2"
+      },
+      {
+        "type": "image",
+        "name": "HELLO TEAM 3",
+        "path": "/static/media/images/hello-team-3.jpg",
+        "notes": "HELLO TEAM 3"
+      },
+      {
+        "type": "image",
+        "name": "SERIA JESTEM ŚWIĘTY",
+        "path": "/static/media/images/series.jpg",
+        "notes": "SERIA JESTEM ŚWIĘTY"
+      },
+      {
+        "type": "image",
+        "name": "WORSHIP NIGHT",
+        "path": "/static/media/images/worship-night.jpg",
+        "notes": "WORSHIP NIGHT"
+      },
+      {
+        "type": "image",
+        "name": "GIVING",
+        "path": "/static/media/images/giving.jpg",
+        "notes": "GIVING"
+      },
+      {
+        "type": "video",
+        "name": "ALPHA BEAR",
+        "path": "/static/media/videos/alpha.mp4",
+        "notes": "ALPHA BEAR",
+        "options": [
+          {
+            "autoplay": true,
+            "loop": false,
+            "mute": false
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "ALPHA",
+        "path": "/static/media/images/alpha.jpg",
+        "notes": "ALPHA"
+      },
+      {
+        "type": "image",
+        "name": "ALPHA 2",
+        "path": "/static/media/images/alpha-2.jpg",
+        "notes": "ALPHA 2"
+      },
+      {
+        "type": "image",
+        "name": "ALPHA 3",
+        "path": "/static/media/images/alpha-3.jpg",
+        "notes": "ALPHA 3"
+      }
+    ],
+    "prompter": {
+      "countdown": null
+    }
+  },
+  {
+    "id": "10",
+    "name": "END",
+    "type": "slide",
+    "notes": "KONIEC",
+    "slides": [
+      {
+        "type": "video",
+        "name": "LOOP",
+        "path": "/static/media/videos/loop.mp4",
+        "notes": "LOOPIK",
+        "options": [
+          {
+            "autoplay": true,
+            "loop": true,
+            "mute": true
+          }
+        ]
+      }
+    ],
+    "prompter": {
+      "countdown": null
+    }
+  }
+]

@@ -1,0 +1,257 @@
+{
+  "id": "70fb7a63-6f8a-4d04-9c39-1f241519d46b",
+  "title": "Jezus żyje w nas",
+  "text": "",
+  "original": {
+    "title": "This Is Living",
+    "author": "Hillsong Young & Free",
+    "album": "This Is Living",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Budzę się, wiedząc, po co żyję"
+          },
+          {
+            "text": "Każdy sen spełnia się"
+          }
+        ],
+        [
+          {
+            "text": "To z Tobą przez życie chcę iść"
+          },
+          {
+            "text": "To moja decyzja"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Podnosisz mnie, pokazujesz cuda"
+          },
+          {
+            "text": "W miłości Twej znika czas"
+          }
+        ],
+        [
+          {
+            "text": "Twa wolność jest tutaj, jest w nas"
+          },
+          {
+            "text": "Jej nic nie dorówna"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c",
+      "parts": [
+        [
+          {
+            "text": "Widzę, jak słońca blask rozjaśnia świat"
+          },
+          {
+            "text": "Czerń i biel kolorowe stają się"
+          },
+          {
+            "text": "Widzę, że z Bogiem wszystko nowe jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Jezus żyje w nas"
+          },
+          {
+            "text": "Jezus żyje w nas"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v3",
+      "parts": [
+        [
+          {
+            "text": "Ufam Ci, wiem, że jesteś blisko"
+          },
+          {
+            "text": "Mając Cię, wszystko mam"
+          }
+        ],
+        [
+          {
+            "text": "Ty dałeś mi miłość i cel"
+          },
+          {
+            "text": "To właśnie dla Ciebie żyć chcę"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Prowadzisz mnie tam, gdzie nie był nikt"
+          },
+          {
+            "text": "Twoja miłość sprawia, że chcę śnić"
+          }
+        ],
+        [
+          {
+            "text": "Twoja wolność to otwarte drzwi"
+          },
+          {
+            "text": "Ty przerastasz me najśmielsze sny"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Prechorus",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v3",
+      "name": "Zwrotka 3",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Prechorus",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": null,
+    "seconds": null
+  },
+  "bpm": null,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=So97pmyDbVw",
+    "spotify": "https://open.spotify.com/track/6rEYi9IVC85Z2xpbrJEryc"
+  }
+}

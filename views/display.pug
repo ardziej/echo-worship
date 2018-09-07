@@ -1,0 +1,62 @@
+doctype html
+html
+    include includes/head.pug
+    body.client
+        .reveal
+            .slides
+                each el in sequence
+                    if el.type === 'slide'
+                        section
+                            section
+                            each slideEl in el.slides
+                                if slideEl.type === 'video'
+                                    section(
+                                        data-background-video=slideEl.path,
+                                        data-background-video-muted=(!!slideEl.options[0].mute),
+                                        data-background-video-loop=(!!slideEl.options[0].loop),
+                                        data-autoplay=(!!slideEl.options[0].autoplay)
+                                    )
+                                else if slideEl.type === 'image'
+                                    section(data-background-image=slideEl.path)
+                                else
+                                    section= slideEl.type
+                    else if el.type === 'song'
+                        section
+                            include includes/song/client.pug
+
+
+
+        include includes/foot.pug
+        script.
+            let uid = Math.random().toString(36).substring(2);
+            console.log(uid);
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                keyboard: true,
+                touch: false,
+                // Transition style
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                center: true,
+                width: '100%',
+                height: '100%',
+                history: true,
+                overview: false,
+                multiplex: {
+                    secret: null,
+                    id: '586c28d7520b3e74',
+                    url: '#{socketIO}',
+                    uid: uid
+                },
+                dependencies: [
+                    {src: '/static/assets/javascripts/socket.io.js', async: true},
+                    {src: '/static/assets/javascripts/socket-io/client.js', async: true}
+                ]
+            })

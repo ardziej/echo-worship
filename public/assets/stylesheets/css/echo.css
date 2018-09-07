@@ -1,0 +1,79 @@
+.reveal {
+    width: 100%;
+    height: 100%;
+}
+
+.reveal .slides {
+    color: #fff;
+    font-family: "AvenirM", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1.4;
+}
+
+.ui .reveal .slides {
+    letter-spacing: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.client .reveal .slides {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1.3;
+}
+
+.prompter .reveal .slides {
+    font-size: 56px;
+    letter-spacing: initial;
+    font-weight: 900;
+}
+
+.song-top {
+    height: 20%;
+}
+
+.prompter #countdown {
+    text-align: center;
+    font-size: 360px;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #000000d4;
+    text-shadow: 2px 1px 25px rgba(0, 0, 0, 1);
+}
+
+.prompter #clock {
+    font-size: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    color: #ffffff;
+    padding: 20px;
+    text-align: right;
+    background-color: #000000d4;
+}
+
+@media only screen and (max-width: 600px) {
+    .prompter .reveal .slides {
+        font-size: 14px;
+    }
+
+    .prompter #clock {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .prompter #countdown {
+        padding: 15px;
+        font-size: 28px;
+    }
+}

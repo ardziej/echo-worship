@@ -1,0 +1,299 @@
+{
+  "id": "r1455drc-15bb-457f-a4f8-00da50ad104e",
+  "title": "W najciemniejszą z nocy",
+  "text": "",
+  "original": {
+    "title": "When The Fight Calls",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong Young & Free",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "To miłość Twa"
+          },
+          {
+            "text": "Zwycięża świat"
+          },
+          {
+            "text": "Nie walczę więc już ja"
+          }
+        ],
+        [
+          {
+            "text": "Podnoszę wzrok"
+          },
+          {
+            "text": "Odrzucam strach"
+          },
+          {
+            "text": "I śpiewam, gdy wokół mrok"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Nawet kiedy błądzę"
+          },
+          {
+            "text": "Nawet kiedy słabnę"
+          }
+        ],
+        [
+          {
+            "text": "W najciemniejszą z nocy"
+          },
+          {
+            "text": "Ja ufam"
+          }
+        ],
+        [
+          {
+            "text": "Jezu, jesteś większy"
+          },
+          {
+            "text": "Nigdy nie zawiedziesz"
+          }
+        ],
+        [
+          {
+            "text": "Będę Cię wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Ze wszystkich mych sił"
+          },
+          {
+            "text": "I całym mym sercem"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Choć wokół sztorm"
+          },
+          {
+            "text": "Nie boję się"
+          },
+          {
+            "text": "Bo morze zna Twój głos"
+          }
+        ],
+        [
+          {
+            "text": "Ty czekasz tam"
+          },
+          {
+            "text": "Gdzie nie ma dna"
+          },
+          {
+            "text": "Do Ciebie chcę iść wśród fal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Nie słucham, co mówi do mnie lęk"
+          },
+          {
+            "text": "Burza i mrok nie zniszczą mnie"
+          },
+          {
+            "text": "Ja wierzę Ci, bo prawdy głos to Ty"
+          }
+        ],
+        [
+          {
+            "text": "Ogień nie może spalić mnie"
+          },
+          {
+            "text": "Wygram w modlitwie bitwy me"
+          },
+          {
+            "text": "Dziś dobrze wiem, to czego chcę to Ty"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c2",
+      "parts": [
+        [
+          {
+            "text": "Nawet kiedy błądzę"
+          },
+          {
+            "text": "Nawet kiedy słabnę"
+          }
+        ],
+        [
+          {
+            "text": "W najciemniejszą z nocy"
+          },
+          {
+            "text": "Ja ufam"
+          }
+        ],
+        [
+          {
+            "text": "Jezu, jesteś większy"
+          },
+          {
+            "text": "Nigdy nie zawiedziesz"
+          }
+        ],
+        [
+          {
+            "text": "Będę Cię wielbić"
+          }
+        ],
+        [
+          {
+            "text": "Ze wszystkich mych sił"
+          },
+          {
+            "text": "I całym mym sercem"
+          }
+        ],
+        [
+          {
+            "text": "Ze wszystkich mych sił"
+          },
+          {
+            "text": "I całym mym sercem"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c2",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": null,
+    "seconds": null
+  },
+  "bpm": null,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=vTBjdhSMiy8",
+    "spotify": "https://open.spotify.com/track/7btfnTVpN6J22B61l1x6pv"
+  }
+}

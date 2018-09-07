@@ -1,0 +1,186 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,700&subset=latin-ext);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #000;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'AvenirM', Helvetica, sans-serif;
+$headingFont: 'AvenirM', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingvLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+body {
+  font-family: $mainFont;
+  background: #000;
+  background-color: #000; }
+
+
+.reveal {
+	height:100%;
+}
+
+.half-screen {
+  height: 20%;
+}
+.top-movie {
+  height:70%;
+}
+
+
+.reveal.show-notes .speaker-notes h1 {
+  font-size: 20px;
+  color: #222;
+}
+.reveal.show-notes .speaker-notes h2 {
+  font-size: 18px;
+  color: #222;
+}
+.reveal.show-notes .speaker-notes h3 {
+  font-size: 16px;
+  color: #222;
+}
+
+#counter-block {
+  font-size: 22px;
+  display: block;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  z-index: 1;
+  background-color: #232323;
+  padding: 20px;
+  line-height: 30px;
+
+}
+
+#counter-block div {
+  display: inline-block;
+}
+
+#clock {
+  font-size: 22px;
+  display: block;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5%;
+  z-index: 999999;
+  height: 30px;
+  color: #232323;
+  padding: 20px;
+  line-height: 30px;
+  text-align: right;
+  float: right;
+}
+
+.prompter #clock {
+  color: #fff;
+  height: 150px;
+  width: 100%;
+  top: 0;
+  line-height: 100px;
+  font-size: 100px;
+  padding: 0;
+  right: 40px;
+  top: 0;
+}
+
+.prompter #counter-block {
+  background-color: transparent;
+}
+
+.prompter .counter-r h1 {
+  font-size: 3.5em;
+}
+
+.prompter .reveal {
+  font-family: $mainFont;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.master .reveal .slides{
+  font-family: $mainFont;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1.4;
+}
+.client .reveal {
+  font-family: $mainFont;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1.4;
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+  line-height: 1.4;
+}
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+/* 980px or less */
+@media screen and (max-width: 980px) {
+
+}
+ 
+/* 700px or less */
+@media screen and (max-width: 700px) {
+.master .reveal .slides {
+    font-family: "AvenirM", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: inherit;
+    line-height: 1.4;
+}
+}
+ 
+/* 480px or less */
+@media screen and (max-width: 480px) {
+
+}

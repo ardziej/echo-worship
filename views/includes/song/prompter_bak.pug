@@ -1,0 +1,15 @@
+each verse, i in el.song.lyrics
+    =verse.id
+    each part, index in verse.parts
+        section(data-menu-title='[' + verse.id + '] ' + part[0].text)
+            each text, j in part
+                =text.text
+                ='(' + j + ')'
+                br
+            hr
+            =JSON.stringify(verse.parts[index])
+            - v = index + 0
+            =verse.parts[v][0].text
+
+
+section(data-menu-title='fade-out')

@@ -1,0 +1,235 @@
+{
+  "id": "324cc252-12e5-4194-9531-9633938fd9fb",
+  "title": "Relentless",
+  "text": "ZWROTKA 1\nZbawienie głosi nowe życie\nA serca pragną Ciebie słyszeć\nNasz dług spłaciłeś raz na zawsze\nTy kochasz nas\nTy kochasz nas\n\nPRE-CHORUS\nTy niesiesz nas, niesiesz nas\nGdy zawodzi świat\nTy chronisz nas, chronisz nas\nTwoja łaska trwa\n\nREFREN\nTy kochasz niezmiennie\nTy kochasz niezmiennie\nTy kochasz niezmiennie\nTy kochasz niezmiennie\n\nZWROTKA 2\nJuż nie chcę dłużej żyć bez Ciebie\nTy jesteś światłem dla tej ziemi\nNadzieją, która trwa na wieki\nTy kochasz nas\nTy kochasz nas\n\nBRIDGE\nBurząc każdy mur ciemności\nNiszcząc to, co chciało związać nas\nWalcząc o najdalsze z serc\nBóg sam życie dał, by zbawić świat\n\nBurząc każdy mur ciemności\nNiszcząc to, co chciało związać nas\nWalcząc o najdalsze z serc\nBóg sam życie dał\n",
+  "original": {
+    "title": "Relentless",
+    "author": "Hillsong Young & Free",
+    "album": "Youth Revival",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Zbawienie głosi nowe życie"
+          },
+          {
+            "text": "A serca pragną Ciebie słyszeć"
+          },
+          {
+            "text": "Nasz dług spłaciłeś raz na zawsze"
+          }
+        ],
+        [
+          {
+            "text": "Ty kochasz nas"
+          },
+          {
+            "text": "Ty kochasz nas"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "p",
+      "parts": [
+        [
+          {
+            "text": "Niesiesz nas, niesiesz nas"
+          },
+          {
+            "text": "Gdy zawodzi świat"
+          }
+        ],
+        [
+          {
+            "text": "Chronisz nas, chronisz nas"
+          },
+          {
+            "text": "Twoja łaska trwa"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Ty kochasz niezmiennie"
+          },
+          {
+            "text": "Ty kochasz niezmiennie"
+          }
+        ],
+        [
+          {
+            "text": "Ty kochasz niezmiennie"
+          },
+          {
+            "text": "Ty kochasz niezmiennie"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Już nie chcę dłużej żyć bez Ciebie"
+          },
+          {
+            "text": "Ty jesteś światłem dla tej ziemi"
+          },
+          {
+            "text": "Nadzieją, która trwa na wieki"
+          }
+        ],
+        [
+          {
+            "text": "Ty kochasz nas"
+          },
+          {
+            "text": "Ty kochasz nas"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Burząc każdy mur ciemności"
+          },
+          {
+            "text": "Niszcząc to, co chciało związać nas"
+          }
+        ],
+        [
+          {
+            "text": "Walcząc o najdalsze z serc"
+          },
+          {
+            "text": "Bóg sam życie dał, by zbawić świat"
+          }
+        ],
+        [
+          {
+            "text": "Burząc każdy mur ciemności"
+          },
+          {
+            "text": "Niszcząc to, co chciało związać nas"
+          }
+        ],
+        [
+          {
+            "text": "Walcząc o najdalsze z serc"
+          },
+          {
+            "text": "Bóg sam życie dał"
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "p",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "p",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },    
+    {
+      "id": "b",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "c",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=t0kmvXlDBYI",
+    "spotify": "https://open.spotify.com/track/3B4Pnw5qBbvu8YXKqAk9Z3"
+  }
+}

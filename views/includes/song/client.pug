@@ -1,0 +1,12 @@
+section
+
+each verse, i in el.song.prompterSequence
+    section(data-state='song-top')
+        each part, index in verse
+            if index === 'text'
+                each text, j in part
+                    =text
+                    br
+
+
+section.full-screen

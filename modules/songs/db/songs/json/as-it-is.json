@@ -1,0 +1,355 @@
+{
+  "id": "70fb7a63-6f8a-4d04-9c39-1f241519d46b",
+  "title": "As It Is (In Heaven)",
+  "text": "",
+  "original": {
+    "title": "As It Is (In Heaven)",
+    "author": "Hillsong Worship",
+    "album": "Let There Be Light",
+    "ccliNo": "",
+    "copyright": "Hillsong",
+    "lyrics": "",
+    "chords": ""
+  },
+  "notes": "",
+  "categories": {
+    "category": [
+      {
+        "id": "63760105-eefd-47de-8d57-a468c1933d0e",
+        "name": "Worship"
+      }
+    ]
+  },
+  "lyrics": [
+    {
+      "id": "v1",
+      "parts": [
+        [
+          {
+            "text": "Wieczność we mnie jest"
+          },
+          {
+            "text": "Końcem nie jest śmierć"
+          },
+          {
+            "text": "Wiem, że niebo czeka mnie"
+          }
+        ],
+        [
+          {
+            "text": "Gdy niełatwo mi"
+          },
+          {
+            "text": "Jesteś przy mnie Ty"
+          },
+          {
+            "text": "Wszystko mam, by wielbić Cię"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pre-c",
+      "parts": [
+        [
+          {
+            "text": "Bo wiem, że znasz mnie"
+          },
+          {
+            "text": "I wiem, że kochasz"
+          }
+        ],
+        [
+          {
+            "text": "I w swojej łasce"
+          },
+          {
+            "text": "Ocaliłeś mnie na zawsze"
+          }
+        ],
+        [
+          {
+            "text": "I chociaż czekam"
+          },
+          {
+            "text": "Znam smak nieba"
+          }
+        ],
+        [
+          {
+            "text": "Bo niebo we mnie jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "v2",
+      "parts": [
+        [
+          {
+            "text": "Choćby przyszedł ból"
+          },
+          {
+            "text": "Mój dom nie jest tu"
+          },
+          {
+            "text": "Wiem, że niebo czeka mnie"
+          }
+        ],
+        [
+          {
+            "text": "Choć noc ciemna jest"
+          },
+          {
+            "text": "Ja nie boję się"
+          },
+          {
+            "text": "Wszystko mam, by wielbić Cię"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "parts": [
+        [
+          {
+            "text": "Będę śpiewać jak wtedy"
+          },
+          {
+            "text": "Kiedy stanę w Twojej chwale"
+          }
+        ],
+        [
+          {
+            "text": "Tam gdzie ciemność mnie nie znajdzie"
+          },
+          {
+            "text": "Gdzie zobaczę Twoją twarz"
+          }
+        ],
+        [
+          {
+            "text": "Będę śpiewać jak ten"
+          },
+          {
+            "text": "Kto nie czuje bólu wcale"
+          }
+        ],
+        [
+          {
+            "text": "Kto już nie zna łez i zranień"
+          },
+          {
+            "text": "Kto prawdziwie wolny jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b",
+      "parts": [
+        [
+          {
+            "text": "Śpiewam: Święty, święty"
+          },
+          {
+            "text": "Mój Bóg jest święty"
+          }
+        ],
+        [
+          {
+            "text": "Tak jak jest tam, w niebie"
+          },
+          {
+            "text": "Niech we mnie jest"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "b2",
+      "parts": [
+        [
+          {
+            "text": "Śpiewam: Święty, święty"
+          },
+          {
+            "text": "Mój Bóg jest święty"
+          }
+        ],
+        [
+          {
+            "text": "Tak jak jest tam, w niebie"
+          },
+          {
+            "text": "Niech we mnie jest"
+          }
+        ],
+        [
+          {
+            "text": "Ziemia śpiewa: Święty"
+          },
+          {
+            "text": "Nasz Bóg jest święty"
+          }
+        ],
+        [
+          {
+            "text": "Tak jak jest tam, w niebie"
+          },
+          {
+            "text": "Niech stanie się"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "i",
+      "parts": [
+        [
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "sequence": [
+    {
+      "id": "v1",
+      "name": "Zwrotka 1",
+      "time": {
+        "minutes": 0,
+        "seconds": 44
+      },
+      "tempo": "normal"
+    },
+    {
+      "id": "pre-c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "v2",
+      "name": "Zwrotka 2",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "pre-c",
+      "name": "Refren",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "i",
+      "name": "Instrumental",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    },
+    {
+      "id": "b",
+      "name": "Bridge",
+      "time": {
+        "minutes": null,
+        "seconds": null
+      },
+      "tempo": null
+    }
+  ],
+  "time": {
+    "minutes": 3,
+    "seconds": 54
+  },
+  "bpm": 120,
+  "media": {
+    "youtube": "https://www.youtube.com/watch?v=So97pmyDbVw",
+    "spotify": "https://open.spotify.com/track/6rEYi9IVC85Z2xpbrJEryc"
+  }
+}
