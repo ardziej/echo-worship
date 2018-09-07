@@ -15,5 +15,5 @@ daemon/
 package-json.lock
 .env
 package-lock.json
-public/media/*
-!public/media/
+!s3/
+s3/**

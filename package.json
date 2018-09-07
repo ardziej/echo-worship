@@ -1,6 +1,6 @@
 {
   "name": "echo-worship",
-  "version": "0.87.0",
+  "version": "0.2.0",
   "description": "ECHO Worship",
   "homepage": "http://weareecho.pl",
   "main": "app.js",
@@ -10,6 +10,8 @@
     "electron": "electron electron.js",
     "start": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\"",
     "app": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\" \"yarn run electron\"",
+    "s3": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store'",
+    "s3-push": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-sync": "rclone sync -v echo:echo/worship-media ./public/media --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-purge": "rm -rf ./public/media/*",
     "s3-resync": "yarn s3-purge && yarn s3-sync",

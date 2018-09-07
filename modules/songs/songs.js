@@ -2,7 +2,7 @@ exports.myDateTime = function () {
     return Date()
 }
 
-let sequence = require('./sequence.json')
+let sequence = require('../../s3/db/sequence.json')
 
 exports.getSequence = function () {
 
