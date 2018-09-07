@@ -14,7 +14,7 @@ function createWindow() {
         alwaysOnTop: true,
         icon: __dirname + 'public/assets/images/favicon.ico'
     })
-    mainWindow.loadURL('http://localhost:50780/')
+    mainWindow.loadURL('http://localhost:50780/d')
     mainWindow.on('closed', function () {
         mainWindow = null
     })

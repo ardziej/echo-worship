@@ -1,6 +1,7 @@
 .reveal {
     width: 100%;
     height: 100%;
+    z-index: 99999;
 }
 
 .reveal .slides {
@@ -14,9 +15,9 @@
 }
 
 .ui .reveal .slides {
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .client .reveal .slides {
@@ -26,6 +27,20 @@
     line-height: 1.3;
 }
 
+.client .reveal .slides .song-block, .ui .reveal .slides .song-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;;
+}
+
+.client .reveal .slides .song-element, .ui .reveal .slides .song-element {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+}
+
 .prompter .reveal .slides {
     font-size: 56px;
     letter-spacing: initial;
@@ -33,9 +48,12 @@
 }
 
 .song-top {
-    height: 20%;
+    height: 30%
 }
 
+.song-top .song-element {
+    background-color: red;
+}
 .prompter #countdown {
     text-align: center;
     font-size: 360px;
@@ -76,4 +94,14 @@
         padding: 15px;
         font-size: 28px;
     }
+}
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    display: none;
 }

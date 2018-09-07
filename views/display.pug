@@ -2,6 +2,10 @@ doctype html
 html
     include includes/head.pug
     body.client
+        section.bg-video
+            video(autoplay="true" loop="true")
+                source(src="/media/backgrounds/smoke-1.mp4" type="video/mp4")
+
         .reveal
             .slides
                 each el in sequence
@@ -11,10 +15,10 @@ html
                             each slideEl in el.slides
                                 if slideEl.type === 'video'
                                     section(
-                                        data-background-video='/media/videos/' + slideEl.path,
-                                        data-background-video-muted=(!!slideEl.options[0].mute),
-                                        data-background-video-loop=(!!slideEl.options[0].loop),
-                                        data-autoplay=(!!slideEl.options[0].autoplay)
+                                    data-background-video='/media/videos/' + slideEl.path,
+                                    data-background-video-muted=(!!slideEl.options[0].mute),
+                                    data-background-video-loop=(!!slideEl.options[0].loop),
+                                    data-autoplay=(!!slideEl.options[0].autoplay)
                                     )
                                 else if slideEl.type === 'image'
                                     section(data-background-image='/media/images/' + slideEl.path)

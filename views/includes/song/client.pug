@@ -5,8 +5,7 @@ each verse, i in el.song.prompterSequence
         each part, index in verse
             if index === 'text'
                 each text, j in part
-                    =text
-                    br
-
+                    span.song-block
+                        span.song-element=text
 
 section.full-screen
