@@ -39,9 +39,7 @@
     background-color: #fff;
     color: #000;
     padding: 10px 20px;
-    background:linear-gradient(-45deg, #b5d6cd, #f6fdf2, #92a4ab, #a7bbbf);
-    background-size: 200% 200%;
-    animation: Gradient 10s ease infinite;
+
 }
 
 .prompter .reveal .slides {
@@ -54,9 +52,6 @@
     height: 30%
 }
 
-.song-top .song-element {
-    background-color: red;
-}
 .prompter #countdown {
     text-align: center;
     font-size: 360px;
@@ -96,34 +91,5 @@
     .prompter #countdown {
         padding: 15px;
         font-size: 28px;
-    }
-}
-
-.bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1;/*
-    display: none;*/
-}
-
-.video-cover {
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
     }
 }
