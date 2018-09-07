@@ -1,6 +1,6 @@
 @import "css/reveal.min.css";
 @import "css/reset.css";
-@import "fonts/fonts.css";
+@import "../fonts/fonts.css";
 @import "css/base.css";
 @import "css/layout.css";
 @import "css/echo.css";
