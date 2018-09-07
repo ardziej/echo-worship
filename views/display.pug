@@ -11,13 +11,13 @@ html
                             each slideEl in el.slides
                                 if slideEl.type === 'video'
                                     section(
-                                        data-background-video=slideEl.path,
+                                        data-background-video='/media/videos/' + slideEl.path,
                                         data-background-video-muted=(!!slideEl.options[0].mute),
                                         data-background-video-loop=(!!slideEl.options[0].loop),
                                         data-autoplay=(!!slideEl.options[0].autoplay)
                                     )
                                 else if slideEl.type === 'image'
-                                    section(data-background-image=slideEl.path)
+                                    section(data-background-image='/media/images/' + slideEl.path)
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'

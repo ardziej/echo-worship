@@ -18,6 +18,7 @@ server.listen(config.node().port, () => console.log('ECHO Worship listening on: 
 
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
+app.use('/media', express.static('s3/media'))
 
 //console.log(song.getSequence())
 

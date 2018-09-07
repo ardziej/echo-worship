@@ -25,7 +25,7 @@ html
                                 if slideEl.type === 'video'
                                     section=slideEl.name
                                 else if slideEl.type === 'image'
-                                    section(data-background-image=slideEl.path)
+                                    section(data-background-image='/media/images/' + slideEl.path)
                                 else
                                     section= slideEl.type
 
