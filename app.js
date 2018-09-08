@@ -12,7 +12,7 @@ let sequence = require('./s3/db/sequence')
 if (app.get('env') === 'development') {
     app.locals.pretty = true
 }
-let url = 'http://' + config.node().ip + ":" + config.node().port;
+let url = '//' + config.node().ip + ":" + config.node().port;
 
 server.listen(config.node().port, () => console.log('ECHO Worship listening on: ' + url))
 
