@@ -12,7 +12,8 @@ let sequence = require('./s3/db/sequence')
 if (app.get('env') === 'development') {
     app.locals.pretty = true
 }
-let url = 'http://' + config.node().ip + ":" + config.node().port;
+let url = '//' + config.node().ip + ":" + config.node().port
+let publicUrl = '//' + config.node().publicUrl
 
 server.listen(config.node().port, () => console.log('ECHO Worship listening on: ' + url))
 
@@ -25,8 +26,8 @@ app.use('/media', express.static('s3/media'))
 app.get('/', function (req, res) {
     res.render('ui', {
         title: "V2",
-        url: url,
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        url: publicUrl,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -35,7 +36,7 @@ app.get('/', function (req, res) {
 app.get('/display', function (req, res) {
     res.render('display', {
         title: "DISPLAY",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -44,7 +45,7 @@ app.get('/display', function (req, res) {
 app.get('/master', function (req, res) {
     res.render('master', {
         title: "MASTER",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -53,7 +54,7 @@ app.get('/master', function (req, res) {
 app.get('/prompter', function (req, res) {
     res.render('prompter', {
         title: "PROMPTER",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -62,7 +63,7 @@ app.get('/prompter', function (req, res) {
 app.get('/training', function (req, res) {
     res.render('training', {
         title: "TRAINING",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
