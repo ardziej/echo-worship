@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
     res.render('ui', {
         title: "V2",
         url: url,
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 app.get('/display', function (req, res) {
     res.render('display', {
         title: "DISPLAY",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -44,7 +44,7 @@ app.get('/display', function (req, res) {
 app.get('/master', function (req, res) {
     res.render('master', {
         title: "MASTER",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -53,7 +53,7 @@ app.get('/master', function (req, res) {
 app.get('/prompter', function (req, res) {
     res.render('prompter', {
         title: "PROMPTER",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })
@@ -62,7 +62,7 @@ app.get('/prompter', function (req, res) {
 app.get('/training', function (req, res) {
     res.render('training', {
         title: "TRAINING",
-        socketIO: config.ws().ip + ":" + config.ws().port,
+        socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
     })

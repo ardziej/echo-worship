@@ -44,4 +44,4 @@ let brown = '\033[33m',
     green = '\033[32m',
     reset = '\033[0m'
 
-console.log(brown + "reveal.js:" + reset + " Multiplex running on port " + green + config.ws().port + reset)
+console.log(brown + "ECHO Worship" + reset + " Socket.io running on: ws://" + green + config.ws().url + reset)
