@@ -12,7 +12,8 @@ let sequence = require('./s3/db/sequence')
 if (app.get('env') === 'development') {
     app.locals.pretty = true
 }
-let url = '//' + config.node().ip + ":" + config.node().port;
+let url = '//' + config.node().ip + ":" + config.node().port
+let publicUrl = '//' + config.node().publicUrl
 
 server.listen(config.node().port, () => console.log('ECHO Worship listening on: ' + url))
 
@@ -25,7 +26,7 @@ app.use('/media', express.static('s3/media'))
 app.get('/', function (req, res) {
     res.render('ui', {
         title: "V2",
-        url: url,
+        url: publicUrl,
         socketIO: config.ws().publicUrl,
         message: 'Hello there!',
         sequence: song.getSequence()
