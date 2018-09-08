@@ -24,8 +24,15 @@ io.on('connection', function (socket) {
         socket.broadcast.emit('echo', data)
     })
 })
-
-app.get("/token", function (req, res) {
+app.get('/', function (req, res) {
+    let defaultResponse = {
+        "code": 200,
+        "message": "ECHO WORSHIP WSS"
+    }
+    res.status(defaultResponse.code)
+    res.send(defaultResponse)
+})
+app.get('/token', function (req, res) {
     let ts = new Date().getTime()
     let rand = Math.floor(Math.random() * 9999999)
     let secret = ts.toString() + rand.toString()
