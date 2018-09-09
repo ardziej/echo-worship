@@ -1,11 +1,14 @@
 section(data-menu-title=el.name)
     =section
 each verse, i in el.song.prompterSequence
-    section(data-autoslide="2000")
+    section
         each part, index in verse
             if index === 'text'
                 each text, j in part
                     span.song-block
-                        span.song-element=text
+                        if text
+                            span.song-element=text
+                        else
+                            span
 
 section(data-menu-title='fade-out')
