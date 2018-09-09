@@ -31,7 +31,7 @@
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    text-align: right;
+    text-align: center;
 }
 
 .client .reveal .slides .song-element, .ui .reveal .slides .song-element {
