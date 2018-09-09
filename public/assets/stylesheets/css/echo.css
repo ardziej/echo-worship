@@ -39,6 +39,9 @@
     background-color: #fff;
     color: #000;
     padding: 10px 20px;
+    background: linear-gradient(-45deg, #bab4b5, #f6fdf2, #a0b3bb, #e2dbdf);
+    background-size: 200% 200%;
+    animation: Gradient 10s ease infinite;
 }
 
 .prompter .reveal .slides {
@@ -90,5 +93,17 @@
     .prompter #countdown {
         padding: 15px;
         font-size: 28px;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
     }
 }
