@@ -36,12 +36,9 @@
 
 .client .reveal .slides .song-element, .ui .reveal .slides .song-element {
     display: inline-block;
-    background-color: #fff;
+    background-color: #e2e2e2;
     color: #000;
     padding: 10px 20px;
-    background: linear-gradient(-45deg, #bab4b5, #f6fdf2, #a0b3bb, #e2dbdf);
-    background-size: 200% 200%;
-    animation: Gradient 10s ease infinite;
 }
 
 .prompter .reveal .slides {
