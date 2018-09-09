@@ -59,7 +59,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999999;
     background-color: #000000d4;
     text-shadow: 2px 1px 25px rgba(0, 0, 0, 1);
 }
@@ -70,7 +70,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999999;
     color: #ffffff;
     padding: 20px;
     text-align: right;
