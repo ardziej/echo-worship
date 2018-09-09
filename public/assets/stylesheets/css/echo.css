@@ -36,7 +36,7 @@
 
 .client .reveal .slides .song-element, .ui .reveal .slides .song-element {
     display: inline-block;
-    background-color: #e2e2e2;
+    background-color: #fff;
     color: #000;
     padding: 10px 20px;
 }
