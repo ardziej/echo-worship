@@ -25,7 +25,7 @@ html
                 ul.sidebar__nav(id="sidebar__nav")
                     each navItem, index in sequence
                         li.sidebar__item
-                            a.sidebar__link(href='#/' + index
+                            a.sidebar__link(
                             data-menu-title=navItem.name
                             onclick='slideTo(' + index + ')') #{index + 1}) #{navItem.name}
             .box.preview-master
@@ -175,6 +175,7 @@ html
                 })
 
                 function slideTo(slide) {
+                    //preventDefault()
                     let slideToEl = document.getElementById("sc-" + slide)
                     slideToEl.scrollIntoView()
                 }

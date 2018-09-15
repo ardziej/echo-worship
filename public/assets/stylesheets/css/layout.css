@@ -223,6 +223,7 @@
     display: block;
     padding: 10px 10px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .sidebar__link:hover {
