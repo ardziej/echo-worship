@@ -171,13 +171,18 @@ html
                     let state = Reveal.getIndices()
                     setCurrentSlide(state)
                     let isAutoSliding = Reveal.isAutoSliding()
-                    console.log('isAutoSliding: ' + isAutoSliding)
+                    scrollTo(state.h, state.v)
                 })
 
                 function slideTo(slide) {
-                    //preventDefault()
                     let slideToEl = document.getElementById("sc-" + slide)
                     slideToEl.scrollIntoView()
+                }
+
+                function scrollTo(h, v) {
+                    let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
+                    let el = slideToEl[0]
+                    el.scrollIntoView()
                 }
 
                 Reveal.addEventListener('ready', function () {
