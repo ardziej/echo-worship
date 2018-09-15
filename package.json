@@ -17,7 +17,8 @@
     "s3-sync": "rclone sync -v echo:echo/worship-media ./public/media --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-purge": "rm -rf ./public/media/*",
     "s3-resync": "yarn s3-purge && yarn s3-sync",
-    "s3-sync-remote": "rclone sync -v ./public/media echo:echo/worship-media --exclude '.gitkeep' --exclude '.DS_Store'"
+    "s3-sync-remote": "rclone sync -v ./public/media echo:echo/worship-media --exclude '.gitkeep' --exclude '.DS_Store'",
+    "lint": "eslint src -c .eslintrc --ext js,jsx"
   },
   "author": {
     "name": "Michal Ardziejewski",
@@ -37,8 +38,16 @@
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
-    "grunt-cli": "^1.2.0",
     "electron": "^2.0.2",
-    "nodemon": "^1.17.5"
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "grunt-cli": "^1.2.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.14.2"
   }
 }
