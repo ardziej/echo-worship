@@ -31,7 +31,7 @@
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    text-align: left;;
+    text-align: center;
 }
 
 .client .reveal .slides .song-element, .ui .reveal .slides .song-element {
@@ -59,7 +59,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999999;
     background-color: #000000d4;
     text-shadow: 2px 1px 25px rgba(0, 0, 0, 1);
 }
@@ -70,7 +70,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999999;
     color: #ffffff;
     padding: 20px;
     text-align: right;
@@ -90,5 +90,17 @@
     .prompter #countdown {
         padding: 15px;
         font-size: 28px;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
     }
 }
