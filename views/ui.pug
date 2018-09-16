@@ -180,9 +180,17 @@ html
                 }
 
                 function scrollTo(h, v) {
-                    let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
-                    let el = slideToEl[0]
-                    el.scrollIntoView()
+                    if (v >= 4) {
+                        let vS = v - 4
+                        let slideToEl = document.getElementsByClassName('slide-' + h + '-' + vS)
+                        let el = slideToEl[0]
+                        el.scrollIntoView()
+                    }
+                    else {
+                        let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
+                        let el = slideToEl[0]
+                        el.scrollIntoView()
+                    }
                 }
 
                 Reveal.addEventListener('ready', function () {
