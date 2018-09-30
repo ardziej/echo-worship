@@ -1,5 +1,7 @@
 const config = require('./modules/config/config')
 
+const fs = require('fs')
+
 const express = require('express')
 const app = express()
 const server = require('http').Server(app)
@@ -8,7 +10,10 @@ const song = require('./modules/songs/songs')
 const YAML = require('yaml')
 
 let sequence = require('./s3/db/sequence')
-// 192.68.77.210 = asus M1
+let timeline = './s3/db/timeline/sequence.yml'
+const file = fs.readFileSync(timeline, 'utf8')
+const timeLineSequence = YAML.parse(file)
+console.log(timeLineSequence)
 
 if (app.get('env') === 'development') {
     app.locals.pretty = true
