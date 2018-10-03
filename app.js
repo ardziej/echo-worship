@@ -25,7 +25,7 @@ app.use('/media', express.static('s3/media'))
 
 app.get('/', function (req, res) {
     res.render('ui', {
-        title: "V2",
+        title: "DASHBOARD V2",
         url: publicUrl,
         socketIO: config.ws().publicUrl,
         message: 'Hello there!',
