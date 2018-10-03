@@ -21,7 +21,6 @@ app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 app.use('/media', express.static('s3/media'))
 
-//console.log(song.getSequence())
 
 app.get('/', function (req, res) {
     res.render('ui', {
