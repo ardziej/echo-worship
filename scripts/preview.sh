@@ -55,6 +55,9 @@ for i in $(seq 1 $desiredsnippets)
     start=$(($(($i*$interval))+$starttimeseconds))
     formattedstart=$(printf "%02d:%02d:%02d\n" $(($start/3600)) $(($start%3600/60)) $(($start%60)))
     echo 'Generating preview part ' $i $formattedstart
+
+    ffmpeg -i $sourcefile -ss $formattedstart -vf scale=$dimensions -vframes 1 preview/$i.jpg
+
     # Generate the snippet at calculated time
     ffmpeg -i $sourcefile -vf scale=$dimensions -preset fast -qmin 1 -qmax 1 -an -ss $formattedstart -t $snippetlengthinseconds $tempdir/$i.$extension 
 done
