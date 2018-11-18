@@ -2,6 +2,13 @@ doctype html
 html
     include includes/head.pug
     body.client
+        .bgvideo
+            video(
+            src='media/videos/galaxy.mp4'
+            autoplay
+            loop
+            muted
+            )
         .reveal
             .slides
                 each el in sequence
