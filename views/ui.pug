@@ -205,23 +205,19 @@ html
                     Reveal.toggleAutoSlide()
                 })
 
-                window.onload = function () { //executes code after DOM loads
-                    //--- select all <video> on the page
-                    const vids = document.getElementsByTagName('video')
-                    // Loop over the selected elements and add event listeners
+                window.onload = function () {
+                    const thumbs = document.getElementById('content')
+                    const vids = thumbs.getElementsByTagName('video')
                     for (let i = 0; i < vids.length; i++) {
-                        console.log('v' + i)
                         vids[i].addEventListener('mouseover',
                             function (e) {
                                 vids[i].play()
                             }
                         )
                         vids[i].addEventListener('mouseout',
-
                             function (e) {
                                 vids[i].pause()
                             }
                         )
                     }
-
                 }
