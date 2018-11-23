@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 sourcefile=$1
 destfile=$2
 
@@ -59,7 +60,7 @@ for i in $(seq 1 $desiredsnippets)
     ffmpeg -i $sourcefile -ss $formattedstart -vf scale=$dimensions -vframes 1 preview/$i.jpg
 
     # Generate the snippet at calculated time
-    ffmpeg -i $sourcefile -vf scale=$dimensions -preset fast -qmin 1 -qmax 1 -an -ss $formattedstart -t $snippetlengthinseconds $tempdir/$i.$extension 
+    ffmpeg -i $sourcefile -vf scale=$dimensions -preset fast -qmin 1 -qmax 1 -an -ss $formattedstart -t $snippetlengthinseconds $tempdir/$i.$extension
 done
 
 # Concat videos
