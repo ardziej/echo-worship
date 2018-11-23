@@ -205,26 +205,6 @@ html
                     Reveal.toggleAutoSlide()
                 })
 
-                let navContainer = document.getElementById("sidebar__nav");
-                var elementsArray = navContainer.querySelectorAll('.sidebar__link');
-
-                elementsArray.forEach(function (elem) {
-                    elem.addEventListener("click", function () {
-                        let slideToEl = document.getElementById("sc-2");
-                        slideToEl.scrollIntoView();
-
-                        var current = navContainer.getElementsByClassName("active");
-
-                        // If there's no active class
-                        if (current.length > 0) {
-                            // current[0].className = current[0].className.replace(" active", "");
-                        }
-
-                        // Add the active class to the current/clicked button
-                        this.className += " active";
-                    });
-                });
-
                 window.onload = function () { //executes code after DOM loads
                     //--- select all <video> on the page
                     const vids = document.getElementsByTagName('video')
