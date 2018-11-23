@@ -75,7 +75,16 @@ html
                                 if slideEl.type === 'video'
                                     section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
-                                            img.content__thumbnail.content__thumbnail--full(src='/static/assets/images/video-thumbnail.png')
+                                            video.content__thumbnail.content__thumbnail--full(
+                                            controls
+                                            loop
+                                            muted
+                                            poster='/media/videos/preview/promo/1.jpg'
+                                            )
+                                                source(
+                                                src='/media/videos/preview/promo/video.mp4'
+                                                type='video/mp4'
+                                                )
                                             =slideEl.name
 
                                 else if slideEl.type === 'image'
@@ -185,8 +194,7 @@ html
                         let slideToEl = document.getElementsByClassName('slide-' + h + '-' + vS)
                         let el = slideToEl[0]
                         el.scrollIntoView()
-                    }
-                    else {
+                    } else {
                         let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
                         let el = slideToEl[0]
                         el.scrollIntoView()
