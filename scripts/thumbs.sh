@@ -4,7 +4,7 @@ TYPE='mp4'
 
 DIR='/Users/ardziej/dev/echo/echo-worship/s3/media/videos'
 THUMBS="${DIR}/thumbs"
-FILES=`find $DIR -type f -iname "*.$TYPE"`
+FILES=`find $DIR -type f -iname "*.$TYPE" -not -path "$THUMBS*"`
 
 if [[ ! -e $THUMBS ]]; then
     mkdir $THUMBS
@@ -27,13 +27,14 @@ for f in $FILES; do
 
         dirc="${dir}thumbs/${base}"
 
-        if [[ ! -e $dirc ]]; then
-            mkdir $dirc
+        if [[ -d $dirc ]]; then
+            echo "SKIP this one"
         elif [[ ! -d $dirc ]]; then
-            echo "$dirc already exists but is not a directory" 1>&2
+            mkdir $dirc
+            echo `./ffmpeg.sh $f $dirc`
         fi
-        echo $PWD
-        echo `./ffmpeg.sh $f $dirc`
+
+
 
     fi
 done
