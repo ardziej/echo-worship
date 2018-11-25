@@ -1,13 +1,16 @@
 section
 
 each verse, i in el.song.prompterSequence
-    section(data-state='song-top')
+    section(data-state='song-top' data-i=i)
         each part, index in verse
             if index === 'text'
                 each text, j in part
-                    span.song-block
+                    span.song-block.js-song-block
                         if text
-                            span.song-element=text
+                            if(el.notes === 'oceans')
+                                span.song-element--oceans.js-song-element=text
+                            else
+                                span.song-element.js-song-element=text
                         else
                             span
 
