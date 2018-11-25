@@ -73,7 +73,7 @@ html
             Reveal.addEventListener('slidechanged', function (event) {
                 const state = Reveal.getIndices()
                 const el = document.getElementById('video-bg')
-                if (state.h === 2) {
+                if (state.h === 2 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
                     }
@@ -84,7 +84,7 @@ html
                         el.classList.add('overlay-none')
                     }
                     el.src = 'media/backgrounds/stars.mp4'
-                } else if (state.h === 3) {
+                } else if (state.h === 3 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
                     }
@@ -95,7 +95,7 @@ html
                         el.classList.add('overlay-none')
                     }
                     el.src = 'media/backgrounds/galaxy.mp4'
-                } else if (state.h === 5) {
+                } else if (state.h === 5 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
                     }
@@ -106,7 +106,7 @@ html
                         el.classList.add('overlay')
                     }
                     el.src = 'media/backgrounds/ocean-1.mp4'
-                } else {
+                } else if (state.h >= 6) {
                     if (!el.classList.contains('overlay-blackout')) {
                         el.classList.add('overlay-blackout')
                     }
