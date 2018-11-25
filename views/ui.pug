@@ -27,7 +27,7 @@ html
                         li.sidebar__item
                             a.sidebar__link(
                             data-menu-title=navItem.name
-                            onclick='slideTo(' + index + ')') #{index + 1}) #{navItem.name}
+                            onclick='slideTo(' + index + ')') #{index + 1}. #{navItem.name}
             .box.preview-master
                 .reveal
                     .slides
@@ -65,7 +65,7 @@ html
                 each el, index in sequence
                     if el.type === 'slide'
                         section(data-menu-title=el.name)
-                            h3.content__header=index + 1 + ') ' + el.name.toUpperCase()
+                            h3.content__header=index + 1 + '. ' + el.name.toUpperCase()
                         section.content__box(id='sc-' + index)
                             section.content__blackout.content__blackout--border.content__status(class='slide-' + index + '-0')
                                 a(href='#/' + index)
