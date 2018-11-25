@@ -4,6 +4,16 @@ exports.myDateTime = function () {
 
 let sequence = require('../../s3/db/sequence.json')
 
+function getFilenameAndExtension(pathfilename) {
+
+    var filenameextension = pathfilename.replace(/^.*[\\\/]/, '');
+    var filename = filenameextension.substring(0, filenameextension.lastIndexOf('.'));
+    var ext = filenameextension.split('.').pop();
+
+    return [filename, ext];
+
+}
+
 exports.getSequence = function () {
 
     Object.keys(sequence).forEach(key => {
@@ -63,8 +73,7 @@ exports.getSequence = function () {
                 })
                 sequence[key]['song']['prompterSequence'] = songNew
                 sequence[key]['song']['songText'] = songText
-            }
-            else {
+            } else {
                 sequence[key]['song'] = songContent
                 let song = []
                 Object.keys(songContent.lyrics).forEach(keyS => {
@@ -82,7 +91,17 @@ exports.getSequence = function () {
                 })
                 sequence[key]['song']['prompterSequence'] = song
             }
+        } else if (sequence[key]['type'] === 'slide') {
+            Object.keys(sequence[key]['slides']).forEach(keyV => {
+                if (sequence[key]['slides'][keyV].type === 'video') {
+                    let file_name = sequence[key]['slides'][keyV].path
+                    let thumb_dir = getFilenameAndExtension(file_name)[0]
+                    sequence[key]['slides'][keyV].thumbdir = thumb_dir
+                }
+
+            })
         }
+
     })
 
     return sequence

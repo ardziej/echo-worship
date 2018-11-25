@@ -75,7 +75,15 @@ html
                                 if slideEl.type === 'video'
                                     section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
-                                            img.content__thumbnail.content__thumbnail--full(src='/static/assets/images/video-thumbnail.png')
+                                            video.content__thumbnail.content__thumbnail--full(
+                                            loop
+                                            muted
+                                            poster='/media/videos/thumbs/' + slideEl.thumbdir + '/1.jpg'
+                                            )
+                                                source(
+                                                src='/media/videos/thumbs/' + slideEl.thumbdir + '/video.mp4'
+                                                type='video/mp4'
+                                                )
                                             =slideEl.name
 
                                 else if slideEl.type === 'image'
@@ -185,8 +193,7 @@ html
                         let slideToEl = document.getElementsByClassName('slide-' + h + '-' + vS)
                         let el = slideToEl[0]
                         el.scrollIntoView()
-                    }
-                    else {
+                    } else {
                         let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
                         let el = slideToEl[0]
                         el.scrollIntoView()
@@ -198,20 +205,19 @@ html
                     Reveal.toggleAutoSlide()
                 })
 
-                let navContainer = document.getElementById("sidebar__nav");
-                let links = navContainer.getElementsByClassName("sidebar__link");
-
-                links.addEventListener("click", function () {
-                    let slideToEl = document.getElementById("sc-2");
-                    slideToEl.scrollIntoView();
-
-                    //var current = document.getElementsByClassName("active");
-
-                    // If there's no active class
-                    if (current.length > 0) {
-                        // current[0].className = current[0].className.replace(" active", "");
+                window.onload = function () {
+                    const thumbs = document.getElementById('content')
+                    const vids = thumbs.getElementsByTagName('video')
+                    for (let i = 0; i < vids.length; i++) {
+                        vids[i].addEventListener('mouseover',
+                            function (e) {
+                                vids[i].play()
+                            }
+                        )
+                        vids[i].addEventListener('mouseout',
+                            function (e) {
+                                vids[i].pause()
+                            }
+                        )
                     }
-
-                    // Add the active class to the current/clicked button
-                    this.className += " active";
-                });
+                }

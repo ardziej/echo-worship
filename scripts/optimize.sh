@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 sourcefile=$1
 #destfile=$2
 
