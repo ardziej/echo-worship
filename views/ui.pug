@@ -38,13 +38,16 @@ html
                                         =el.name
                                     each slideEl in el.slides
                                         if slideEl.type === 'video'
-                                            section(
-                                            data-menu-title=slideEl.name
-                                            data-background-video='/media/videos/' + slideEl.path,
-                                            data-background-video-muted,
-                                            data-background-video-loop=(!!slideEl.options[0].loop),
-                                            data-autoplay=(!!slideEl.options[0].autoplay)
-                                            )
+                                            section
+                                                video(
+                                                controls
+                                                data-autoplay
+                                                muted
+                                                )
+                                                    source(
+                                                    src='/media/videos/' + slideEl.path
+                                                    type="video/mp4"
+                                                    )
                                         else if slideEl.type === 'image'
                                             section(
                                             data-menu-title=slideEl.name
