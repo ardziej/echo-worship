@@ -5,6 +5,10 @@
   "homepage": "http://weareecho.pl",
   "main": "app.js",
   "scripts": {
+    "build-ts": "tsc",
+    "dev-ts": "ts-node ./lib/server.ts",
+    "start-ts": "node ./dist/server.js",
+    "prod-ts": "yarn build && yarn start",
     "dev": "nodemon app.js",
     "ws": "nodemon ws.js",
     "electron": "electron electron.js",
