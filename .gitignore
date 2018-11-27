@@ -15,5 +15,6 @@ daemon/
 package-json.lock
 .env
 package-lock.json
+dist/*
 !s3/
 s3/**
