@@ -14,18 +14,6 @@ exports.node = function () {
     }
 }
 
-exports.ws = function () {
-    let ip = process.env.WS_IP || "localhost"
-    let port = process.env.WS_PORT || "50731"
-    let publicUrl = process.env.WS_PUBLIC_URL || ip + ':' + port
-    return {
-        "ip": ip,
-        "port": port,
-        "url": ip + ':' + port,
-        "publicUrl": publicUrl
-    }
-}
-
 exports.songsApi = function () {
     return {
         "ip": process.env.SONGS_API_IP || "localhost",
