@@ -1,4 +1,4 @@
-const config = require('./modules/config/config')
+const config = require('../server/modules/config/config')
 
 let http = require('http')
 let express = require('express')

@@ -1,13 +1,13 @@
 {
   "name": "echo-worship",
-  "version": "0.2.0",
+  "version": "0.7.0",
   "description": "ECHO Worship",
   "homepage": "http://weareecho.pl",
-  "main": "app.js",
+  "main": "server/app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "ws": "nodemon ws.js",
-    "electron": "electron electron.js",
+    "dev": "nodemon server/app.js",
+    "ws": "nodemon server/ws.js",
+    "electron": "electron app/electron.js",
     "start": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\"",
     "app": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\" \"yarn run electron\"",
     "db": "rclone sync -v echo:echo/echo-worship/db ./s3/db --exclude '.gitkeep' --exclude '.DS_Store'",

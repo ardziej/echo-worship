@@ -1,9 +1,9 @@
 doctype html
 html
-    include includes/head.pug
+    include includes/head
     script.
         localStorage.clear()
-    body.prompter
+    body.training
         #clock
         #countdown
         .reveal
@@ -33,12 +33,11 @@ html
                         section(
                         data-state="normal"
                         )
-                            include includes/song/prompter.pug
+                            include includes/song/prompter
 
 
 
-        include includes/foot.pug
-
+        include includes/foot
         script.
             let uid = Math.random().toString(36).substring(2)
             //console.log(uid)
@@ -89,27 +88,11 @@ html
                 cs()
             }, false)
             Reveal.addEventListener('slidechanged', function (event) {
-                //console.log(event.currentSlide)
-                //let currentSlide = document.querySelector(".reveal .slides .present")
+                console.log(event.currentSlide)
+                let currentSlide = document.querySelector(".reveal .slides .present")
                 //let n = currentSlide.data-state
                 //console.log(currentSlide)
                 // event.previousSlide, event.currentSlide, event.indexh, event.indexv
             })
-            Reveal.addEventListener('ready', function (event) {
-                console.log('READY')
-                var e = new Event("keydown");
-                e.key = "f";    // just enter the char you want to send
-                e.keyCode = e.key.charCodeAt(0);
-                e.which = e.keyCode;
-                e.altKey = false;
-                e.ctrlKey = true;
-                e.shiftKey = false;
-                e.metaKey = false;
-                e.bubbles = true;
-                document.dispatchEvent(e);
-                console.log('F')
-                //Reveal.enterFullscreen();
-                // event.currentSlide, event.indexh, event.indexv
-            });
 
         script(src='/static/assets/javascripts/prompter.js')

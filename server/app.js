@@ -6,7 +6,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const song = require('./modules/songs/songs')
 
-let sequence = require('./s3/db/sequence')
+let sequence = require('../s3/db/sequence')
 // 192.68.77.210 = asus M1
 
 if (app.get('env') === 'development') {

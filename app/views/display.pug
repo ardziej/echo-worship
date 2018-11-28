@@ -1,6 +1,6 @@
 doctype html
 html
-    include includes/head.pug
+    include includes/head
     body.client
         .bgvideo
             video(
@@ -31,11 +31,11 @@ html
                                     section= slideEl.type
                     else if el.type === 'song'
                         section
-                            include includes/song/client.pug
+                            include includes/song/client
 
 
 
-        include includes/foot.pug
+        include includes/foot
         script.
             let uid = Math.random().toString(36).substring(2);
             console.log(uid);

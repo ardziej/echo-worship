@@ -31,7 +31,7 @@ for f in $FILES; do
             echo "SKIP this one"
         elif [[ ! -d $dirc ]]; then
             mkdir $dirc
-            echo `./ffmpeg.sh $f $dirc`
+            echo `ffmpeg.sh $f $dirc`
         fi
 
 
