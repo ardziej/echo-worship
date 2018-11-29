@@ -5,6 +5,7 @@ const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const song = require('./modules/songs/songs')
+let cors = require('cors')
 
 let sequence = require('./s3/db/sequence')
 // 192.68.77.210 = asus M1
@@ -20,7 +21,7 @@ server.listen(config.node().port, () => console.log('ECHO Worship listening on: 
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 app.use('/media', express.static('s3/media'))
-
+app.use(cors())
 
 app.get('/', function (req, res) {
     res.render('ui', {

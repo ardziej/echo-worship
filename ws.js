@@ -5,9 +5,12 @@ let express = require('express')
 let fs = require('fs')
 let io = require('socket.io')
 let crypto = require('crypto')
+let cors = require('cors')
 
 let app = express()
 let server = http.createServer(app)
+
+app.use(cors())
 
 io = io(server)
 
