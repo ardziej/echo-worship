@@ -74,16 +74,15 @@ html
                 const state = Reveal.getIndices()
                 const el = document.getElementById('video-bg')
                 if (state.h === 2 && state.v === 0) {
-                    if (el.classList.contains('overlay-blackout')) {
-                        el.classList.remove('overlay-blackout')
+                    if (!el.classList.contains('overlay-blackout')) {
+                        el.classList.add('overlay-blackout')
+                    }
+                    if (el.classList.contains('overlay-none')) {
+                        el.classList.remove('overlay-none')
                     }
                     if (el.classList.contains('overlay')) {
                         el.classList.remove('overlay')
                     }
-                    if (!el.classList.contains('overlay-none')) {
-                        el.classList.add('overlay-none')
-                    }
-                    el.src = 'media/backgrounds/stars.mp4'
                 } else if (state.h === 3 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
@@ -105,7 +104,7 @@ html
                     if (!el.classList.contains('overlay')) {
                         el.classList.add('overlay')
                     }
-                    el.src = 'media/backgrounds/ocean-1.mp4'
+                    el.src = 'media/backgrounds/stars.mp4'
                 } else if (state.h >= 6) {
                     if (!el.classList.contains('overlay-blackout')) {
                         el.classList.add('overlay-blackout')
