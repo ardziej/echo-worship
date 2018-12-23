@@ -41,6 +41,7 @@
     padding: 10px 20px;
     border: 5px solid #fff;
 }
+
 .client .reveal .slides .song-element--oceans, .ui .reveal .slides .song-element--oceans {
     display: inline-block;
     /*background-color: #fff;
@@ -57,7 +58,7 @@
 }
 
 .song-top {
-    height: 35%
+    height: 55%
 }
 
 .prompter #countdown {
