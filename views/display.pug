@@ -83,6 +83,7 @@ html
                     if (el.classList.contains('overlay')) {
                         el.classList.remove('overlay')
                     }
+                    el.src = 'media/backgrounds/bg_7.mp4'
                 } else if (state.h === 3 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
@@ -93,7 +94,7 @@ html
                     if (!el.classList.contains('overlay-none')) {
                         el.classList.add('overlay-none')
                     }
-                    el.src = 'media/backgrounds/galaxy.mp4'
+                    el.src = 'media/backgrounds/bg_3.mp4'
                 } else if (state.h === 5 && state.v === 0) {
                     if (el.classList.contains('overlay-blackout')) {
                         el.classList.remove('overlay-blackout')
@@ -104,8 +105,51 @@ html
                     if (!el.classList.contains('overlay')) {
                         el.classList.add('overlay')
                     }
-                    el.src = 'media/backgrounds/stars.mp4'
-                } else if (state.h >= 6) {
+                    el.src = 'media/backgrounds/bg_5.mp4'
+                } else if (state.h >= 6 && state.h < 10) {
+                    if (!el.classList.contains('overlay-blackout')) {
+                        el.classList.add('overlay-blackout')
+                    }
+                    if (el.classList.contains('overlay-none')) {
+                        el.classList.remove('overlay-none')
+                    }
+                    if (el.classList.contains('overlay')) {
+                        el.classList.remove('overlay')
+                    }
+                } else if (state.h === 10 && state.v === 0) {
+                    if (el.classList.contains('overlay-blackout')) {
+                        el.classList.remove('overlay-blackout')
+                    }
+                    if (el.classList.contains('overlay-none')) {
+                        el.classList.remove('overlay-none')
+                    }
+                    if (!el.classList.contains('overlay')) {
+                        el.classList.add('overlay')
+                    }
+                    el.src = 'media/backgrounds/bg_6.mp4'
+                } else if (state.h === 11 && state.v === 0) {
+                    if (el.classList.contains('overlay-blackout')) {
+                        el.classList.remove('overlay-blackout')
+                    }
+                    if (el.classList.contains('overlay-none')) {
+                        el.classList.remove('overlay-none')
+                    }
+                    if (!el.classList.contains('overlay')) {
+                        el.classList.add('overlay')
+                    }
+                    el.src = 'media/backgrounds/bg_3.mp4'
+                } else if (state.h === 12 && state.v === 0) {
+                    if (el.classList.contains('overlay-blackout')) {
+                        el.classList.remove('overlay-blackout')
+                    }
+                    if (el.classList.contains('overlay-none')) {
+                        el.classList.remove('overlay-none')
+                    }
+                    if (!el.classList.contains('overlay')) {
+                        el.classList.add('overlay')
+                    }
+                    el.src = 'media/backgrounds/bg_3.mp4'
+                } else if (state.h >= 13) {
                     if (!el.classList.contains('overlay-blackout')) {
                         el.classList.add('overlay-blackout')
                     }
