@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     z-index: 99999;
-    transform: rotate(0.5deg);
 }
 
 .reveal .slides {
@@ -59,7 +58,7 @@
 }
 
 .song-top {
-    height: 60%;
+    height: 30%;
 }
 
 .prompter #countdown {
