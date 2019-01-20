@@ -93,6 +93,7 @@ html
                                     section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
                                             img.content__thumbnail(src='/media/images/' + slideEl.path)
+                                            =slideEl.name
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'
