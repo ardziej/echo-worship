@@ -7,10 +7,8 @@ each verse, i in el.song.prompterSequence
                 each text, j in part
                     span.song-block.js-song-block
                         if text
-                            if(el.notes === 'style-1')
-                                span.song-element--style-1.js-song-element=text
-                            else if(el.notes === 'style-2')
-                                span.song-element--style-2.js-song-element=text
+                            if(el.notes !== '')
+                                span.js-song-element.song-element(class="song-element--" + el.notes)=text
                             else
                                 span.song-element.js-song-element=text
                         else

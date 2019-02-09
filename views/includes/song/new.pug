@@ -5,9 +5,12 @@ each verse, i in el.song.prompterSequence
         each part, index in verse
             if index === 'text'
                 each text, j in part
-                    span.song-block
+                    span.song-block.js-song-block
                         if text
-                            span.song-element=text
+                            if(el.notes !== '')
+                                span.js-song-element.song-element(class="song-element--" + el.notes)=text
+                            else
+                                span.song-element.js-song-element=text
                         else
                             span
 
