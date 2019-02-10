@@ -74,6 +74,7 @@
     padding: 10px 20px;
     border: 0;
     border-top: 5px solid #fff;
+    margin-top: -20px;
 }
 
 .client .reveal .slides section .song-block:first-of-type .song-element--style-4, .ui .reveal .slides section .song-block:first-of-type .song-element--style-4 {
@@ -88,6 +89,15 @@
 
 .song-top {
     height: 40%;
+}
+
+.text-next {
+    opacity: 0;
+}
+
+.song-do-it-again .text-next {
+    opacity: 0.5;
+    font-size: 60% !important;
 }
 
 .prompter #countdown {

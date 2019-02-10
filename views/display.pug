@@ -26,11 +26,15 @@ html
                                     data-autoplay=(!!slideEl.options[0].autoplay)
                                     )
                                 else if slideEl.type === 'image'
-                                    section(data-background-image='/media/images/' + slideEl.path)
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="slide-in fade-out"
+                                    )
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'
-                        section
+                        section(class='song-' + el.notes)
                             include includes/song/client.pug
 
 
@@ -48,10 +52,10 @@ html
                 transition: 'fade', // none/fade/slide/convex/concave/zoom
 
                 // Transition speed
-                transitionSpeed: 'fast', // default/fast/slow
+                transitionSpeed: 'slow', // default/fast/slow
 
                 // Transition style for full page slide backgrounds
-                backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
                 center: true,
                 width: '100%',
