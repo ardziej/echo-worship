@@ -91,14 +91,81 @@
     height: 40%;
 }
 
+@keyframes fadeInOutEcho {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInEcho {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+@keyframes animationFramesEcho {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
 .text-next {
     opacity: 0;
 }
 
-.song-do-it-again .text-next {
-    opacity: 0.5;
-    font-size: 60% !important;
+/*
+
+.song-do-it-again section .song-block-animation {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; !*when the spec is finished*!
+    opacity: 0;
 }
+
+.song-do-it-again section.present .song-block-animation {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; !*when the spec is finished*!
+}
+*/
+.song-do-it-again section .text-next {
+
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-do-it-again section.present .text-next {
+    opacity: 0;
+    font-size: 60% !important;
+    /*background-color: #fff;
+    color: #000;*/
+    animation-name: fadeInEcho;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
 
 .prompter #countdown {
     text-align: center;

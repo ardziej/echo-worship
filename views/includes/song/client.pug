@@ -2,12 +2,12 @@ section
 - var sl = el.song.prompterSequence.length
 each verse, i in el.song.prompterSequence
     section(data-state='song-top' data-i=i
-    data-transition-speed="normal"
-    data-transition="fade-in fade-out")
+    data-transition-speed="slow"
+    data-transition="none")
         each part, index in verse
             if index === 'text'
                 each text, j in part
-                    span.song-block.js-song-block
+                    span.song-block.js-song-block.song-block-animation
                         if text
                             if(el.notes !== '')
                                 span.js-song-element.song-element(class="song-element--" + el.notes)=text
@@ -15,23 +15,22 @@ each verse, i in el.song.prompterSequence
                                 span.song-element.js-song-element=text
                         else
                             span
-
         - var n = i + 1
         if n < sl
             - var next = el.song.prompterSequence[n]
-                each val, ind in next
-                    - var se = 1
-                    if ind === 'text'
-                        each t, k in val
-                            if t === ''
-                                - var se = 0
-                            else
-                                - var se = 1
-                            span.text-next
-                                =t
-                            br
-                    else if ind === 'id'
-                        span.verse-id
-                            =""
+            each val, ind in next
+                - var se = 1
+                if ind === 'text'
+                    each t, k in val
+                        if t === ''
+                            - var se = 0
+                        else
+                            - var se = 1
+                        span.text-next
+                            =t
+                        br
+                else if ind === 'id'
+                    span.verse-id
+                        =""
 
 section.full-screen

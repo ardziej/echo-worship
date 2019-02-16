@@ -139,7 +139,6 @@ html
                     history: true,
                     touch: false,
                     overview: false,
-                    autoSlide: false,
                     multiplex: {
                         secret: '1522447881274330524',
                         id: '586c28d7520b3e74',
@@ -181,7 +180,7 @@ html
                 Reveal.addEventListener('slidechanged', function (event) {
                     let state = Reveal.getIndices()
                     setCurrentSlide(state)
-                    let isAutoSliding = Reveal.isAutoSliding()
+                    //let isAutoSliding = Reveal.isAutoSliding()
                     scrollTo(state.h, state.v)
                 })
 
@@ -205,7 +204,7 @@ html
 
                 Reveal.addEventListener('ready', function () {
                     //Reveal.configure({autoSlide: false})
-                    Reveal.toggleAutoSlide()
+                    //Reveal.toggleAutoSlide()
                 })
 
                 window.onload = function () {

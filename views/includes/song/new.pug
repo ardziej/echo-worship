@@ -1,7 +1,8 @@
 section(data-menu-title=el.name)
     =section
 each verse, i in el.song.prompterSequence
-    section
+    section(data-autoslide=verse.timeSlide[0])
+        - console.log(verse)
         each part, index in verse
             if index === 'text'
                 each text, j in part
