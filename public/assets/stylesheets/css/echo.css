@@ -247,3 +247,11 @@
     font-weight: 400 !important;
     margin: 5% auto;
 }
+
+.ui .bible-verse {
+    font-size: 120% !important;
+}
+
+.ui .bible-script {
+    font-size: 100% !important;
+}
