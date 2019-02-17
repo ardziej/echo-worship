@@ -29,8 +29,19 @@ html
                                     section(
                                     data-background-image='/media/images/' + slideEl.path
                                     data-transition-speed="slow"
-                                    data-transition="slide-in fade-out"
+                                    data-transition="fade-in fade-out"
                                     )
+                                else if slideEl.type === 'bible'
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="fade-in fade-out"
+                                    )
+                                        div.bible
+                                            div.bible-verse
+                                                =slideEl.verse
+                                            div.bible-script
+                                                =slideEl.script
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'

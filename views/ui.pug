@@ -53,6 +53,13 @@ html
                                             data-menu-title=slideEl.name
                                             data-background-image='/media/images/' + slideEl.path
                                             )
+                                        else if slideEl.type === 'bible'
+                                            section(data-background-image='/media/images/' + slideEl.path)
+                                                div.bible
+                                                    div.bible-verse
+                                                        =slideEl.verse
+                                                    div.bible-script
+                                                        =slideEl.script
                                         else
                                             section= slideEl.type
                             else if el.type === 'song'
@@ -94,6 +101,11 @@ html
                                         a(href='#/' + index + '/' + j)
                                             img.content__thumbnail(src='/media/images/' + slideEl.path)
                                             =slideEl.name
+                                else if slideEl.type === 'bible'
+                                    section.content__bible.content__bible--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            span.bible__tag=slideEl.script
+                                            span.bible__link=slideEl.verse
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'

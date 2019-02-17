@@ -26,6 +26,13 @@ html
                                     section=slideEl.name
                                 else if slideEl.type === 'image'
                                     section(data-background-image='/media/images/' + slideEl.path)
+                                else if slideEl.type === 'bible'
+                                    section(data-background-image='/media/images/' + slideEl.path)
+                                        div.bible
+                                            div.bible-verse
+                                                =slideEl.verse
+                                            div.bible-script
+                                                =slideEl.script
                                 else
                                     section= slideEl.type
 
