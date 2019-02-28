@@ -139,14 +139,14 @@
     animation-fill-mode: forwards; !*when the spec is finished*!
     opacity: 0;
 }
-*/
+
 .song-style-beta section.present .song-block-animation {
     animation-name: fadeIn;
     animation-duration: 1.5s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
-
+*/
 .song-style-beta section .text-next {
 
     animation-name: fadeOut;
