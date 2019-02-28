@@ -150,7 +150,7 @@
 .song-style-beta section .text-next {
 
     animation-name: fadeOut;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
@@ -161,7 +161,7 @@
     /*background-color: #fff;
     color: #000;*/
     animation-name: fadeInEcho;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
