@@ -1,0 +1,85 @@
+doctype html
+html
+    include includes/head.pug
+    body.client
+        .bgvideo
+            video(
+            id='video-bg'
+            class='stars'
+            src='media/backgrounds/stars.mp4'
+            autoplay
+            loop
+            muted
+            )
+        .reveal
+            .slides
+                each el in sequence
+                    if el.type === 'slide'
+                        section
+                            section
+                            each slideEl in el.slides
+                                if slideEl.type === 'video'
+                                    section(
+                                    data-background-video='/media/videos/' + slideEl.path,
+                                    data-background-video-muted=(!!slideEl.options[0].mute),
+                                    data-background-video-loop=(!!slideEl.options[0].loop),
+                                    data-autoplay=(!!slideEl.options[0].autoplay)
+                                    )
+                                else if slideEl.type === 'image'
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="fade-in fade-out"
+                                    )
+                                else if slideEl.type === 'bible'
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="fade-in fade-out"
+                                    )
+                                        div.bible
+                                            div.bible-verse
+                                                =slideEl.verse
+                                            div.bible-script
+                                                =slideEl.script
+                                else
+                                    section= slideEl.type
+                    else if el.type === 'song'
+                        section(class='song-' + el.notes)
+                            include includes/song/client.pug
+
+
+
+        include includes/foot.pug
+        script.
+            let uid = Math.random().toString(36).substring(2);
+            console.log(uid);
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                keyboard: true,
+                touch: false,
+                // Transition style
+                transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'slow', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+                viewDistance: 3,
+                width: '100%',
+                height: '100%',
+                history: true,
+                overview: false,
+                multiplex: {
+                    secret: null,
+                    id: '586c28d7520b3e74',
+                    url: '#{socketIO}',
+                    uid: uid
+                },
+                dependencies: [
+                    {src: '/static/assets/javascripts/socket.io.js', async: true},
+                    {src: '/static/assets/javascripts/socket-io/client.js', async: true}
+                ]
+            })

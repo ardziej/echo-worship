@@ -1,6 +1,6 @@
 doctype html
 html
-    include includes/head
+    include includes/head.pug
     script.
         localStorage.clear()
     body.training
@@ -33,11 +33,11 @@ html
                         section(
                         data-state="normal"
                         )
-                            include includes/song/prompter
+                            include includes/song/prompter.pug
 
 
 
-        include includes/foot
+        include includes/foot.pug
         script.
             let uid = Math.random().toString(36).substring(2)
             //console.log(uid)

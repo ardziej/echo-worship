@@ -1,6 +1,6 @@
 doctype html
 html
-    include includes/head.pug
+    include includes/head
     body.ui
         .wrapper.wrapper-main
             .box.header
@@ -64,7 +64,7 @@ html
                                             section= slideEl.type
                             else if el.type === 'song'
                                 section
-                                    include includes/song/new.pug
+                                    include includes/song/new
             .box.preview-prompter
                 iframe(
                 width="100%"
@@ -142,7 +142,7 @@ html
                 ='©2019 ECHO CHURCH'
 
 
-            include includes/foot.pug
+            include includes/foot
             script.
                 var uid = Math.random().toString(36).substring(2)
                 console.log(uid);

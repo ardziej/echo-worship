@@ -1,0 +1,10 @@
+section= el.song.title
+each verse, i in el.song.lyrics
+    each part, index in verse.parts
+        section(data-menu-title='[' + verse.id + '] ' + part[0].text)
+            each text, j in part
+                =text.text
+                br
+
+
+section(data-menu-title='fade-out')

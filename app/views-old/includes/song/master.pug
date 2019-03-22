@@ -1,0 +1,20 @@
+section(data-menu-title=el.name)
+    =section = el.song.title
+    aside.notes
+        span.notes-song-sequence
+            each seq in el.song.sequence
+                span.el-seq [#{seq.id}]
+        br
+        br
+        span !{el.song.songText.replace(/\n/g, '<br/>')}
+
+
+each verse, i in el.song.prompterSequence
+    section(data-menu-title='[' + verse.id + '] ' + verse.text[0])
+        each part, index in verse
+            if index === 'text'
+                each text, j in part
+                    =text
+                    br
+
+section(data-menu-title='fade-out')
