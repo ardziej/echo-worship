@@ -41,13 +41,44 @@
     padding: 10px 20px;
     border: 5px solid #fff;
 }
-.client .reveal .slides .song-element--oceans, .ui .reveal .slides .song-element--oceans {
+
+.client .reveal .slides .song-element--style-1, .ui .reveal .slides .song-element--style-1 {
     display: inline-block;
-    /*background-color: #fff;
-    color: #000;*/
+    background-color: transparent;
     color: #fff;
     padding: 10px 20px;
     border: 5px solid #fff;
+}
+
+.client .reveal .slides .song-element--style-2, .ui .reveal .slides .song-element--style-2 {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-bottom: 5px solid #fff;
+}
+
+.client .reveal .slides .song-element--style-3, .ui .reveal .slides .song-element--style-3 {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.client .reveal .slides .song-element--style-4, .ui .reveal .slides .song-element--style-4 {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-top: 5px solid #fff;
+    margin-top: -20px;
+}
+
+.client .reveal .slides section .song-block:first-of-type .song-element--style-4, .ui .reveal .slides section .song-block:first-of-type .song-element--style-4 {
+    border: 0;
 }
 
 .prompter .reveal .slides {
@@ -57,8 +88,84 @@
 }
 
 .song-top {
-    height: 30%
+    height: 40%;
 }
+
+@keyframes fadeInOutEcho {
+    0% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInEcho {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+@keyframes animationFramesEcho {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+.text-next {
+    opacity: 0;
+}
+
+/*
+
+.song-style-beta section .song-block-animation {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; !*when the spec is finished*!
+    opacity: 0;
+}
+
+.song-style-beta section.present .song-block-animation {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+*/
+.song-style-beta section .text-next {
+
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-style-beta section.present .text-next {
+    opacity: 0;
+    font-size: 60% !important;
+    /*background-color: #fff;
+    color: #000;*/
+    animation-name: fadeInEcho;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
 
 .prompter #countdown {
     text-align: center;
@@ -112,4 +219,39 @@
     100% {
         background-position: 0% 50%
     }
+}
+
+
+.bible {
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto !important;
+    margin-top: -20% !important;
+}
+
+.bible-verse {
+    text-align: center;
+    text-transform: initial;
+    letter-spacing: initial !important;;
+    font-size: 70% !important;
+    font-weight: 400 !important;
+    margin: 5% auto;
+}
+
+.bible-script {
+    text-align: right;
+    padding-top: 5% !important;
+    text-transform: initial;
+    letter-spacing: initial !important;;
+    font-size: 50% !important;
+    font-weight: 400 !important;
+    margin: 5% auto;
+}
+
+.ui .bible-verse {
+    font-size: 120% !important;
+}
+
+.ui .bible-script {
+    font-size: 100% !important;
 }

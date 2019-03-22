@@ -6,6 +6,7 @@
   "main": "server/app.js",
   "scripts": {
     "dev": "nodemon server/app.js",
+    "ws": "nodemon server/ws.js",
     "electron": "electron app/electron.js",
     "start": "concurrently --kill-others \"yarn run dev\"",
     "app": "concurrently --kill-others \"yarn run dev\" \"yarn run electron\"",
@@ -22,6 +23,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.0.0",
+    "express-session": "^1.15.6",
+    "socket.io": "^2.1.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mustache": "^3.0.1",

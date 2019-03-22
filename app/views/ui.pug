@@ -16,7 +16,7 @@ html
                         li.nav__item
                             a(href='#/0/3') INTRO
                         li.nav__item
-                            a(href='#/0/4') CROSS
+                            a(href='#/0/5') CROSS
                         li.nav__item
                             a(href='#/0/0') BLACKOUT
                         li.nav__item(id='force-reload')
@@ -53,6 +53,13 @@ html
                                             data-menu-title=slideEl.name
                                             data-background-image='/media/images/' + slideEl.path
                                             )
+                                        else if slideEl.type === 'bible'
+                                            section(data-background-image='/media/images/' + slideEl.path)
+                                                div.bible
+                                                    div.bible-verse
+                                                        =slideEl.verse
+                                                    div.bible-script
+                                                        =slideEl.script
                                         else
                                             section= slideEl.type
                             else if el.type === 'song'
@@ -93,6 +100,12 @@ html
                                     section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
                                             img.content__thumbnail(src='/media/images/' + slideEl.path)
+                                            =slideEl.name
+                                else if slideEl.type === 'bible'
+                                    section.content__bible.content__bible--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            span.bible__tag=slideEl.script
+                                            span.bible__link=slideEl.verse
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'
@@ -118,9 +131,15 @@ html
                             section(data-menu-title='fade-out')
 
             .box.footer
-                ='©2018 ECHO CHURCH'
+                #status
+                    = 'loading...'
+                video(controls='', style='margin: 0 0 1em 0; max-width: 100%; width: 480px;')
+                    // Videos are stored remotely with CORS enabled
+                    source(src='https://echo.ams3.digitaloceanspaces.com/id/uploads/countdown.mp4', type='video/mp4')
+                    p Your browser does not support the video element.
+                #currentSrc
 
-
+                ='©2019 ECHO CHURCH'
 
 
             include includes/foot
@@ -131,7 +150,8 @@ html
                     controls: false,
                     progress: false,
                     showNotes: false,
-                    transition: 'none',
+                    transition: 'fade',
+                    transitionSpeed: 'fast',
                     width: '100%',
                     height: '100%',
                     slideNumber: false,
@@ -139,7 +159,6 @@ html
                     history: true,
                     touch: false,
                     overview: false,
-                    autoSlide: false,
                     multiplex: {
                         secret: '1522447881274330524',
                         id: '586c28d7520b3e74',
@@ -181,7 +200,7 @@ html
                 Reveal.addEventListener('slidechanged', function (event) {
                     let state = Reveal.getIndices()
                     setCurrentSlide(state)
-                    let isAutoSliding = Reveal.isAutoSliding()
+                    //let isAutoSliding = Reveal.isAutoSliding()
                     scrollTo(state.h, state.v)
                 })
 
@@ -205,7 +224,7 @@ html
 
                 Reveal.addEventListener('ready', function () {
                     //Reveal.configure({autoSlide: false})
-                    Reveal.toggleAutoSlide()
+                    //Reveal.toggleAutoSlide()
                 })
 
                 window.onload = function () {

@@ -1,0 +1,18 @@
+doctype html
+html
+    include includes/head.pug
+    body.login
+        section
+            .login-card
+                section.login-logo(src='static/assets/images/favicon.png')
+                    img(src='static/assets/images/favicon.png')
+                h1 ECHO Worship
+
+                if locals.message
+                    .alert.alert-error(role='alert')
+                        strong= message.error
+
+                form.inputs(method='POST', action='/login')
+                    input#email.login-input(type='email', name='email', placeholder='E-mail', required)
+                    input#password.login-input(type='password', name='password', placeholder='Hasło', required)
+                    button.btn.btn-success(type='submit', name='button') Zaloguj

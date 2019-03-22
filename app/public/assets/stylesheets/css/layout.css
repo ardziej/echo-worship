@@ -133,6 +133,9 @@
 
 .content__image {
     background-color: #000;
+    text-align: center;
+    font-size: 60%;
+    padding: 10px;
 }
 
 .content__image--border {
@@ -199,6 +202,42 @@
     padding: 10px;
 }
 
+.content__bible {
+    text-align: center;
+    font-size: 60%;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.content__bible--border {
+    border: 2px solid #444444;
+}
+
+.content__bible--active, .active {
+    border-color: #09c509;
+}
+
+.bible__link {
+    min-height: 120px;
+    width: 100%;
+    display: grid;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.bible__tag {
+    width: 100%;
+    display: block;
+    background: #1f1f1f;
+    color: #ffffff;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
 .content__box {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;

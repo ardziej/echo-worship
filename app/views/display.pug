@@ -1,6 +1,6 @@
 doctype html
 html
-    include includes/head
+    include includes/head.pug
     body.client
         .bgvideo
             video(
@@ -26,16 +26,31 @@ html
                                     data-autoplay=(!!slideEl.options[0].autoplay)
                                     )
                                 else if slideEl.type === 'image'
-                                    section(data-background-image='/media/images/' + slideEl.path)
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="fade-in fade-out"
+                                    )
+                                else if slideEl.type === 'bible'
+                                    section(
+                                    data-background-image='/media/images/' + slideEl.path
+                                    data-transition-speed="slow"
+                                    data-transition="fade-in fade-out"
+                                    )
+                                        div.bible
+                                            div.bible-verse
+                                                =slideEl.verse
+                                            div.bible-script
+                                                =slideEl.script
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'
-                        section
-                            include includes/song/client
+                        section(class='song-' + el.notes)
+                            include includes/song/client.pug
 
 
 
-        include includes/foot
+        include includes/foot.pug
         script.
             let uid = Math.random().toString(36).substring(2);
             console.log(uid);
@@ -51,9 +66,8 @@ html
                 transitionSpeed: 'slow', // default/fast/slow
 
                 // Transition style for full page slide backgrounds
-                backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
-
-                center: true,
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+                viewDistance: 3,
                 width: '100%',
                 height: '100%',
                 history: true,
@@ -68,53 +82,4 @@ html
                     {src: '/static/assets/javascripts/socket.io.js', async: true},
                     {src: '/static/assets/javascripts/socket-io/client.js', async: true}
                 ]
-            })
-
-            Reveal.addEventListener('slidechanged', function (event) {
-                const state = Reveal.getIndices()
-                const el = document.getElementById('video-bg')
-                if (state.h === 2 && state.v === 0) {
-                    if (el.classList.contains('overlay-blackout')) {
-                        el.classList.remove('overlay-blackout')
-                    }
-                    if (el.classList.contains('overlay')) {
-                        el.classList.remove('overlay')
-                    }
-                    if (!el.classList.contains('overlay-none')) {
-                        el.classList.add('overlay-none')
-                    }
-                    el.src = 'media/backgrounds/stars.mp4'
-                } else if (state.h === 3 && state.v === 0) {
-                    if (el.classList.contains('overlay-blackout')) {
-                        el.classList.remove('overlay-blackout')
-                    }
-                    if (el.classList.contains('overlay')) {
-                        el.classList.remove('overlay')
-                    }
-                    if (!el.classList.contains('overlay-none')) {
-                        el.classList.add('overlay-none')
-                    }
-                    el.src = 'media/backgrounds/galaxy.mp4'
-                } else if (state.h === 5 && state.v === 0) {
-                    if (el.classList.contains('overlay-blackout')) {
-                        el.classList.remove('overlay-blackout')
-                    }
-                    if (el.classList.contains('overlay-none')) {
-                        el.classList.remove('overlay-none')
-                    }
-                    if (!el.classList.contains('overlay')) {
-                        el.classList.add('overlay')
-                    }
-                    el.src = 'media/backgrounds/ocean-1.mp4'
-                } else if (state.h >= 6) {
-                    if (!el.classList.contains('overlay-blackout')) {
-                        el.classList.add('overlay-blackout')
-                    }
-                    if (el.classList.contains('overlay-none')) {
-                        el.classList.remove('overlay-none')
-                    }
-                    if (el.classList.contains('overlay')) {
-                        el.classList.remove('overlay')
-                    }
-                }
             })
