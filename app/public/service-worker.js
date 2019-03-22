@@ -24,14 +24,14 @@
 // cache, then increment the CACHE_VERSION value. It will kick off the service worker update
 // flow and the old cache(s) will be purged as part of the activate event handler when the
 // updated service worker is activated.
-var CACHE_VERSION = 3;
+var CACHE_VERSION = 4;
 var CURRENT_CACHES = {
     prefetch: 'prefetch-cache-v' + CACHE_VERSION
 };
 
 self.addEventListener('install', function(event) {
     var urlsToPrefetch = [
-        './',
+        //'./',
         'index.js',
         // The videos are stored remotely with CORS enabled.
         'https://echo.ams3.digitaloceanspaces.com/id/uploads/countdown.mp4'
