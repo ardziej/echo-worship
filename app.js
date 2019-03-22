@@ -5,6 +5,23 @@ const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const song = require('./modules/songs/songs')
+const axios = require('axios');
+const bodyParser = require('body-parser')
+const authAdmin = require('./middleware');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const flash = require('connect-flash');
+
+app.use(cookieParser('cookie-key'));
+app.use(session({
+    cookie: {maxAge: 3600 * 24},
+    secret: 'echo-id-worship-key-77',
+    resave: false,
+    saveUninitialized: false
+}))
+app.use(flash());
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 let sequence = require('./s3/db/sequence')
 // 192.68.77.210 = asus M1
@@ -21,8 +38,7 @@ app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 app.use('/media', express.static('s3/media'))
 
-
-app.get('/', function (req, res) {
+app.get('/', authAdmin, function (req, res) {
     res.render('ui', {
         title: "Worship",
         url: publicUrl,
@@ -30,6 +46,36 @@ app.get('/', function (req, res) {
         message: 'Hello there!',
         sequence: song.getSequence()
     })
+})
+
+app.get('/login', function (req, res) {
+    if (req.session.role === 'admin') {
+        res.redirect('/')
+    } else {
+        res.locals.message = req.flash()
+        res.render('login', {
+            title: "Logowanie",
+            url: publicUrl
+        })
+    }
+})
+
+app.post('/login', function (req, res) {
+
+    axios.post('http://id.weareecho.localhost/api/v1/login', {
+        email: req.body.email,
+        password: req.body.password
+    })
+        .then(function (response) {
+            req.session.email = req.body.email;
+            req.session.role = 'admin'
+            req.session.token = response.data.access_token;
+            res.redirect('/');
+        })
+        .catch(function (error) {
+            req.flash('error', 'Błędne dane.');
+            res.redirect('/login');
+        });
 })
 
 app.get('/display', function (req, res) {
