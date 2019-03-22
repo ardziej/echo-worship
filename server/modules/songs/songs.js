@@ -18,7 +18,7 @@ exports.getSequence = function () {
 
     Object.keys(sequence).forEach(key => {
         if (sequence[key]['type'] === 'song') {
-            let songContent = require('../../s3/db/songs/' + sequence[key]['path'])
+            let songContent = require('../../../s3/db/songs/' + sequence[key]['path'])
             let songSequnce = songContent.sequence
             if (songSequnce) {
                 sequence[key]['song'] = songContent
