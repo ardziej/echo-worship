@@ -37,8 +37,10 @@ server.listen(config.node().port, () => console.log('ECHO Worship listening on: 
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 app.use('/media', express.static('s3/media'))
+app.use(express.static(__dirname + '/public')); // Set the static files location
 
-app.get('/', authAdmin, function (req, res) {
+// authAdmin,
+app.get('/', function (req, res) {
     res.render('ui', {
         title: "Worship",
         url: publicUrl,
