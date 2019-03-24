@@ -7,7 +7,6 @@ const io = require('socket.io')(server)
 const song = require('./modules/songs/songs')
 const axios = require('axios');
 const bodyParser = require('body-parser')
-const authAdmin = require('./middleware');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -39,7 +38,6 @@ app.use('/static', express.static('public'))
 app.use('/media', express.static('s3/media'))
 app.use(express.static(__dirname + '/public')); // Set the static files location
 
-// authAdmin,
 app.get('/', function (req, res) {
     res.render('ui', {
         title: "Worship",
