@@ -25,7 +25,14 @@ html
                                 if slideEl.type === 'video'
                                     section=slideEl.name
                                 else if slideEl.type === 'image'
-                                    section(data-background-image=slideEl.path)
+                                    section(data-background-image='/media/images/' + slideEl.path)
+                                else if slideEl.type === 'bible'
+                                    section(data-background-image='/media/images/' + slideEl.path)
+                                        div.bible
+                                            div.bible-verse
+                                                =slideEl.verse
+                                            div.bible-script
+                                                =slideEl.script
                                 else
                                     section= slideEl.type
 
@@ -47,11 +54,8 @@ html
                 progress: false,
                 keyboard: true,
                 touch: false,
-                // Transition style
-                transition: 'none', // none/fade/slide/convex/concave/zoom
-
-                // Transition speed
-                transitionSpeed: 'default', // default/fast/slow
+                transition: 'none',
+                transitionSpeed: 'fast',
 
                 // Transition style for full page slide backgrounds
                 backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom

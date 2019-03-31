@@ -2,11 +2,11 @@ doctype html
 html
     include includes/head.pug
     body.ui
-        .wrapper
+        .wrapper.wrapper-main
             .box.header
                 .header__logo
                     a(href="javascript:window.location.reload(true)")
-                        img(src='/static/assets/images/favicon.png')
+                        img(src='/static/assets/images/echo-logo.svg')
                 nav.header__menu
                     ul.header__nav
                         li.nav__item
@@ -16,7 +16,7 @@ html
                         li.nav__item
                             a(href='#/0/3') INTRO
                         li.nav__item
-                            a(href='#/0/4') CROSS
+                            a(href='#/0/5') CROSS
                         li.nav__item
                             a(href='#/0/0') BLACKOUT
                         li.nav__item(id='force-reload')
@@ -25,9 +25,9 @@ html
                 ul.sidebar__nav(id="sidebar__nav")
                     each navItem, index in sequence
                         li.sidebar__item
-                            a.sidebar__link(href='#/' + index
+                            a.sidebar__link(
                             data-menu-title=navItem.name
-                            onclick='slideTo(' + index + ')') #{index + 1}) #{navItem.name}
+                            onclick='slideTo(' + index + ')') #{index + 1}. #{navItem.name}
             .box.preview-master
                 .reveal
                     .slides
@@ -38,18 +38,28 @@ html
                                         =el.name
                                     each slideEl in el.slides
                                         if slideEl.type === 'video'
-                                            section(
-                                            data-menu-title=slideEl.name
-                                            data-background-video=slideEl.path,
-                                            data-background-video-muted,
-                                            data-background-video-loop=(!!slideEl.options[0].loop),
-                                            data-autoplay=(!!slideEl.options[0].autoplay)
-                                            )
+                                            section
+                                                video(
+                                                controls
+                                                data-autoplay
+                                                muted
+                                                )
+                                                    source(
+                                                    src='/media/videos/' + slideEl.path
+                                                    type="video/mp4"
+                                                    )
                                         else if slideEl.type === 'image'
                                             section(
                                             data-menu-title=slideEl.name
-                                            data-background-image=slideEl.path
+                                            data-background-image='/media/images/' + slideEl.path
                                             )
+                                        else if slideEl.type === 'bible'
+                                            section(data-background-image='/media/images/' + slideEl.path)
+                                                div.bible
+                                                    div.bible-verse
+                                                        =slideEl.verse
+                                                    div.bible-script
+                                                        =slideEl.script
                                         else
                                             section= slideEl.type
                             else if el.type === 'song'
@@ -65,7 +75,7 @@ html
                 each el, index in sequence
                     if el.type === 'slide'
                         section(data-menu-title=el.name)
-                            h3.content__header=index + 1 + ') ' + el.name.toUpperCase()
+                            h3.content__header=index + 1 + '. ' + el.name.toUpperCase()
                         section.content__box(id='sc-' + index)
                             section.content__blackout.content__blackout--border.content__status(class='slide-' + index + '-0')
                                 a(href='#/' + index)
@@ -75,13 +85,27 @@ html
                                 if slideEl.type === 'video'
                                     section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
-                                            img.content__thumbnail.content__thumbnail--full(src='/static/assets/images/video-thumbnail.png')
+                                            video.content__thumbnail.content__thumbnail--full(
+                                            loop
+                                            muted
+                                            poster='/media/videos/thumbs/' + slideEl.thumbdir + '/1.jpg'
+                                            )
+                                                source(
+                                                src='/media/videos/thumbs/' + slideEl.thumbdir + '/video.mp4'
+                                                type='video/mp4'
+                                                )
                                             =slideEl.name
 
                                 else if slideEl.type === 'image'
                                     section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
-                                            img.content__thumbnail(src=slideEl.path)
+                                            img.content__thumbnail(src='/media/images/' + slideEl.path)
+                                            =slideEl.name
+                                else if slideEl.type === 'bible'
+                                    section.content__bible.content__bible--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            span.bible__tag=slideEl.script
+                                            span.bible__link=slideEl.verse
                                 else
                                     section= slideEl.type
                     else if el.type === 'song'
@@ -107,9 +131,7 @@ html
                             section(data-menu-title='fade-out')
 
             .box.footer
-                ='©2018 ECHO CHURCH'
-
-
+                ='©2019 ECHO CHURCH'
 
 
             include includes/foot.pug
@@ -120,7 +142,8 @@ html
                     controls: false,
                     progress: false,
                     showNotes: false,
-                    transition: 'none',
+                    transition: 'fade',
+                    transitionSpeed: 'fast',
                     width: '100%',
                     height: '100%',
                     slideNumber: false,
@@ -128,7 +151,6 @@ html
                     history: true,
                     touch: false,
                     overview: false,
-                    autoSlide: false,
                     multiplex: {
                         secret: '1522447881274330524',
                         id: '586c28d7520b3e74',
@@ -170,8 +192,8 @@ html
                 Reveal.addEventListener('slidechanged', function (event) {
                     let state = Reveal.getIndices()
                     setCurrentSlide(state)
-                    let isAutoSliding = Reveal.isAutoSliding()
-                    console.log('isAutoSliding: ' + isAutoSliding)
+                    //let isAutoSliding = Reveal.isAutoSliding()
+                    scrollTo(state.h, state.v)
                 })
 
                 function slideTo(slide) {
@@ -179,25 +201,37 @@ html
                     slideToEl.scrollIntoView()
                 }
 
+                function scrollTo(h, v) {
+                    if (v >= 4) {
+                        let vS = v - 4
+                        let slideToEl = document.getElementsByClassName('slide-' + h + '-' + vS)
+                        let el = slideToEl[0]
+                        el.scrollIntoView()
+                    } else {
+                        let slideToEl = document.getElementsByClassName('slide-' + h + '-' + v)
+                        let el = slideToEl[0]
+                        el.scrollIntoView()
+                    }
+                }
+
                 Reveal.addEventListener('ready', function () {
                     //Reveal.configure({autoSlide: false})
-                    Reveal.toggleAutoSlide()
+                    //Reveal.toggleAutoSlide()
                 })
 
-                let navContainer = document.getElementById("sidebar__nav");
-                let links = navContainer.getElementsByClassName("sidebar__link");
-
-                links.addEventListener("click", function () {
-                    let slideToEl = document.getElementById("sc-2");
-                    slideToEl.scrollIntoView();
-
-                    //var current = document.getElementsByClassName("active");
-
-                    // If there's no active class
-                    if (current.length > 0) {
-                        // current[0].className = current[0].className.replace(" active", "");
+                window.onload = function () {
+                    const thumbs = document.getElementById('content')
+                    const vids = thumbs.getElementsByTagName('video')
+                    for (let i = 0; i < vids.length; i++) {
+                        vids[i].addEventListener('mouseover',
+                            function (e) {
+                                vids[i].play()
+                            }
+                        )
+                        vids[i].addEventListener('mouseout',
+                            function (e) {
+                                vids[i].pause()
+                            }
+                        )
                     }
-
-                    // Add the active class to the current/clicked button
-                    this.className += " active";
-                });
+                }

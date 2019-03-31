@@ -28,7 +28,7 @@
 }
 
 .wrapper {
-    background-color: #000;
+    background-color: #353c42;
     color: #fff;
 }
 
@@ -51,8 +51,8 @@
     .wrapper {
         grid-gap: 10px;
         grid-template-columns: 300px auto 576px;
-        grid-template-rows: auto auto 360px 324px 50px;
-        grid-template-areas: "header  header  header" "sidebar sidebar sidebar" "content content master" "content content prompter" "footer footer footer";
+        grid-template-rows: auto 360px 324px 35px;
+        grid-template-areas: "header  header  header" "sidebar content master" "sidebar content prompter" "footer footer footer";
     }
 }
 
@@ -69,10 +69,11 @@
     grid-template-columns: 3fr 9fr;
     grid-template-rows: 1fr;
     grid-auto-flow: row;
-    background-color: #1e2a2f;
+    background-color: #272c30;
     padding: 10px 20px;
     border: 0;
-    border-bottom: 2px solid #272727;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
 }
 
 .header__logo {
@@ -110,15 +111,15 @@
 }
 
 .content {
-    background-color: #000;
-    border: 2px solid #272727;
+    background-color: #333c43;
     overflow-y: auto;
 }
 
 .content__header {
-    font-size: 140%;
-    background-color: #272727;
+    font-size: 100%;
+    background-color: #242b2e;
     padding: 10px 10px;
+    font-size: 80%;
 }
 
 .content__thumbnail {
@@ -131,6 +132,10 @@
 }
 
 .content__image {
+    background-color: #000;
+    text-align: center;
+    font-size: 60%;
+    padding: 10px;
 }
 
 .content__image--border {
@@ -138,8 +143,9 @@
 }
 
 .content__video {
+    background-color: #000;
     text-align: center;
-    font-size: 80%;
+    font-size: 60%;
     padding: 10px;
 }
 
@@ -156,7 +162,7 @@
 
 .content__song {
     text-align: center;
-    font-size: 80%;
+    font-size: 60%;
     line-height: 130%;
     text-transform: uppercase;
 }
@@ -182,6 +188,7 @@
     justify-content: center;
     align-content: center;
     padding: 10px;
+    background-color: #000;
 }
 
 .song__tag {
@@ -195,6 +202,42 @@
     padding: 10px;
 }
 
+.content__bible {
+    text-align: center;
+    font-size: 60%;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.content__bible--border {
+    border: 2px solid #444444;
+}
+
+.content__bible--active, .active {
+    border-color: #09c509;
+}
+
+.bible__link {
+    min-height: 120px;
+    width: 100%;
+    display: grid;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.bible__tag {
+    width: 100%;
+    display: block;
+    background: #1f1f1f;
+    color: #ffffff;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
 .content__box {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -205,13 +248,12 @@
 }
 
 .sidebar {
-    background-color: #000;
+    background-color: transparent;
 }
 
 .sidebar__item {
     margin-bottom: 6px;
-    display: inline-block;
-    margin-right: 6px;
+    display: block;
 }
 
 .sidebar__item:last-child {
@@ -219,10 +261,11 @@
 }
 
 .sidebar__link {
-    background-color: #212121;
+    background-color: #252c2f;
     display: block;
     padding: 10px 10px;
-    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 80%;
 }
 
 .sidebar__link:hover {
@@ -231,10 +274,21 @@
 
 .ui {
     overflow-y: auto;
+    background-color: #353c42;
 }
 
 .footer {
-    background-color: #000;
+    background-color: #272c30;
     color: #ccc;
     font-size: 70%;
+}
+
+body.ui {
+    padding: 10px;
+    background: #94525A;
+    background: radial-gradient(farthest-corner at 95% 10%, #94525A, #181528);
+}
+
+.wrapper-main {
+    box-shadow: 0 3px 20px #000;
 }

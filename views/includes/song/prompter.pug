@@ -7,7 +7,7 @@ section
                 each t, k in val
                     =t
                     br
-            else
+            else if ind === 'id'
                 span.verse-id
                     ='[' + val + ']'
                     br
@@ -20,7 +20,7 @@ each verse, i in el.song.prompterSequence
                 each text, j in part
                     =text
                     br
-            else
+            else if index === 'id'
                 p.verse-id
                     ='[' + part + ']'
 
@@ -34,7 +34,7 @@ each verse, i in el.song.prompterSequence
                         each t, k in val
                             =t
                             br
-                    else
+                    else if ind === 'id'
                         span.verse-id
                             ='[' + val + ']'
                             br

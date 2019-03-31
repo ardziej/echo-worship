@@ -13,7 +13,7 @@ html
                                 if slideEl.type === 'video'
                                     section(
                                     data-menu-title=slideEl.name
-                                    data-background-video=slideEl.path,
+                                    data-background-video='/media/videos/' + slideEl.path,
                                     data-background-video-muted,
                                     data-background-video-loop=(!!slideEl.options[0].loop),
                                     data-autoplay=(!!slideEl.options[0].autoplay)
@@ -21,7 +21,7 @@ html
                                 else if slideEl.type === 'image'
                                     section(
                                     data-menu-title=slideEl.name
-                                    data-background-image=slideEl.path
+                                    data-background-image='/media/images/' + slideEl.path
                                     )
                                 else
                                     section= slideEl.type
@@ -39,8 +39,8 @@ html
                 controls: true,
                 progress: true,
                 showNotes: true,
-                transition: 'none',
-                width: '100%',
+                transition: 'fade',
+                transitionSpeed: 'fast',
                 height: '100%',
                 slideNumber: true,
                 postMessage: true,

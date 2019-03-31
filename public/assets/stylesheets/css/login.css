@@ -1,0 +1,72 @@
+.login {
+    background: #94525A;
+    background: radial-gradient(farthest-corner at 95% 10%, #94525A, #181528);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.login-logo img {
+    max-width: 64px;
+}
+
+.login-card {
+    max-width: 500px;
+    padding: 20px 50px 30px 50px;
+    font-family: "AvenirM", Helvetica, sans-serif;
+    background-color: #fff;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login .alert-error {
+    color: #980000;
+    text-align: center;
+}
+
+.login-card h1 {
+    font-family: "AvenirM", Helvetica, sans-serif;
+    color: #272c30;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.login-card .inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.login-card .inputs input {
+    font-family: "AvenirM", Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #e8eeef;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.login-card .inputs button {
+    cursor: pointer;
+    margin-top: 20px;
+    background: #272c30;
+    border: none;
+    padding: 20px;
+    color: #fff;
+    font-family: "AvenirM", Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.login-card .inputs button:hover {
+    background: #980000;
+}

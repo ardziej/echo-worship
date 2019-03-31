@@ -1,6 +1,6 @@
 {
   "name": "echo-worship",
-  "version": "0.87.0",
+  "version": "0.2.0",
   "description": "ECHO Worship",
   "homepage": "http://weareecho.pl",
   "main": "app.js",
@@ -10,8 +10,15 @@
     "electron": "electron electron.js",
     "start": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\"",
     "app": "concurrently --kill-others \"yarn run dev\" \"yarn run ws\" \"yarn run electron\"",
-    "s3-sync": "rclone sync -v echo:echo/worship-media ./public/media --exclude '.gitkeep' --exclude '.DS_Store'",
-    "s3-sync-remote": "rclone sync -v ./public/media echo:echo/worship-media --exclude '.gitkeep' --exclude '.DS_Store'"
+    "db": "rclone sync -v echo:echo/echo-worship/db ./s3/db --exclude '.gitkeep' --exclude '.DS_Store'",
+    "db-purge": "rm -rf ./s3/db",
+    "db-pull": "yarn db-purge && rclone sync -v echo:echo/echo-worship/db ./s3/db --exclude '.gitkeep' --exclude '.DS_Store'",
+    "db-push": "rclone sync -v ./s3/db echo:echo/echo-worship/db --exclude '.gitkeep' --exclude '.DS_Store'",
+    "s3": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store'",
+    "s3-push": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'",
+    "s3-purge": "rm -rf ./s3/media/*",
+    "s3-resync": "yarn s3-purge && yarn s3",
+    "s3-sync-remote": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'"
   },
   "author": {
     "name": "Michal Ardziejewski",
@@ -23,16 +30,20 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "mustache": "^2.3.0",
+    "express-session": "^1.15.6",
+    "mustache": "^2.3.2",
     "pug": "^2.0.3",
-    "socket.io": "^2.1.0"
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
-    "grunt-cli": "^1.2.0",
-    "electron": "^2.0.2",
-    "nodemon": "^1.17.5"
+    "electron": "^2.0.9",
+    "grunt-cli": "^1.3.1",
+    "nodemon": "^1.18.4"
   }
 }

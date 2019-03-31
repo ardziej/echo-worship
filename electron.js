@@ -3,23 +3,52 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
 let mainWindow
+let externalWindow
 
 function createWindow() {
+    let displays = electron.screen.getAllDisplays()
+    let externalDisplay = displays.find((display) => {
+        return display.bounds.x !== 0 || display.bounds.y !== 0
+    })
+
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
-        kiosk: true,
-        frame: false,
+        kiosk: false,
+        frame: true,
+        show: false,
         backgroundColor: '#000',
         alwaysOnTop: true,
         icon: __dirname + 'public/assets/images/favicon.ico'
     })
     mainWindow.loadURL('http://localhost:50780/')
+    mainWindow.maximize()
+    mainWindow.show()
+
     mainWindow.on('closed', function () {
         mainWindow = null
     })
 
-    let displays = electron.screen.getAllDisplays()
+
+    if (externalDisplay) {
+        externalWindow = new BrowserWindow({
+            width: 800,
+            height: 600,
+            kiosk: true,
+            frame: false,
+            backgroundColor: '#000',
+            alwaysOnTop: true,
+            icon: __dirname + 'public/assets/images/favicon.ico',
+            x: externalDisplay.bounds.x + 50,
+            y: externalDisplay.bounds.y + 50
+        })
+        externalWindow.loadURL('http://localhost:50780/d')
+
+        externalWindow.on('closed', function () {
+            externalWindow = null
+        })
+    }
+
     console.log(displays)
 }
 
