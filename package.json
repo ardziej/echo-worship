@@ -14,6 +14,7 @@
     "db-purge": "rm -rf ./s3/db",
     "db-pull": "yarn db-purge && rclone sync -v echo:echo/echo-worship/db ./s3/db --exclude '.gitkeep' --exclude '.DS_Store'",
     "db-push": "rclone sync -v ./s3/db echo:echo/echo-worship/db --exclude '.gitkeep' --exclude '.DS_Store'",
+    "up": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store' && pm2 restart all",
     "s3": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-push": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-purge": "rm -rf ./s3/media/*",
