@@ -97,7 +97,7 @@ app.get('/master', function (req, res) {
 })
 
 app.get('/prompter', function (req, res) {
-    res.render('display', {
+    res.render('prompter', {
         title: "PROMPTER",
         socketIO: config.ws().publicUrl,
         message: 'Hello there!',
