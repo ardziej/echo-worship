@@ -283,12 +283,6 @@
     font-size: 70%;
 }
 
-body.ui {
-    padding: 10px;
-    background: #94525A;
-    background: radial-gradient(farthest-corner at 95% 10%, #94525A, #181528);
-}
-
 .wrapper-main {
     box-shadow: 0 3px 20px #000;
 }
