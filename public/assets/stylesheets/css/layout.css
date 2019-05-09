@@ -38,6 +38,7 @@
     grid-template-areas: "header" "sidebar" "content" "sidebar" "footer" "master" "prompter";
     grid-template-rows: auto;
     grid-auto-flow: row;
+    height: 100%;
 }
 
 @media only screen and (min-width: 500px) {
@@ -238,6 +239,7 @@
     align-content: center;
     padding: 10px;
 }
+
 .content__box {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
