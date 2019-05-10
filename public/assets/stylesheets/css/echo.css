@@ -166,6 +166,28 @@
     animation-fill-mode: forwards;
 }
 
+.song-style-beta-2 section .text-next {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-style-beta-2 section.present .text-next {
+    opacity: 0;
+    font-size: 60% !important;
+    /*background-color: #fff;
+    color: #000;*/
+    animation-name: fadeInEcho;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-style-beta-2 section.present .text-next-hidden {
+    display: none;
+}
+
 
 .prompter #countdown {
     text-align: center;

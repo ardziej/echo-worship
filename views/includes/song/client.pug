@@ -2,8 +2,8 @@ section
 - var sl = el.song.prompterSequence.length
 each verse, i in el.song.prompterSequence
     section(data-state='song-top' data-i=i
-    data-transition-speed="slow"
-    data-transition="none")
+        data-transition-speed="slow"
+        data-transition="none")
         each part, index in verse
             if index === 'text'
                 each text, j in part
@@ -26,7 +26,11 @@ each verse, i in el.song.prompterSequence
                             - var se = 0
                         else
                             - var se = 1
-                        span.text-next
+                        if(k > 0)
+                            - var classT = 'text-next text-next-hidden'
+                        else
+                            - var classT = 'text-next'
+                        span(class=classT)
                             =t
                         br
                 else if ind === 'id'
