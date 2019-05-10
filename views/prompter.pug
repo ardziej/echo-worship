@@ -9,23 +9,31 @@ html
         .reveal
             .slides
                 each el, i in sequence
+                    if el.prompter.countdown
+                        script.
+                            (function () {
+                                localStorage.setItem('prompter-#{i}', #{el.prompter.countdown})
+                                localStorage.setItem('prompter-style-#{i}', '#{el.prompter.style}')
+                            })()
                     if el.type === 'slide'
                         section(
-                        data-state=(el.prompter.countdown ? "prompter-slide" : "normal")
-                        data-time=(el.prompter.countdown ? el.prompter.countdown : 0)
+                            data-state=(el.prompter.countdown ? "prompter-slide" : "normal")
+                            data-time=(el.prompter.countdown ? el.prompter.countdown : 0)
                         )
-                            if el.prompter.countdown
-                                script.
-                                    (function () {
-                                        localStorage.setItem('prompter-#{i}', #{el.prompter.countdown})
-                                    })()
-
                             section
                             each slideEl in el.slides
                                 if slideEl.type === 'video'
                                     section=slideEl.name
                                 else if slideEl.type === 'image'
                                     section(data-background-image='/media/images/' + slideEl.path)
+                                else if slideEl.type === 'announcement'
+                                    section(data-background-image='/media/images/' + slideEl.path)
+                                        div.announcement
+                                            div.announcement-current
+                                                =slideEl.notes
+                                            hr
+                                            div.announcement-next
+                                                =slideEl.notesNext
                                 else if slideEl.type === 'bible'
                                     section(data-background-image='/media/images/' + slideEl.path)
                                         div.bible
@@ -38,7 +46,8 @@ html
 
                     else if el.type === 'song'
                         section(
-                        data-state="normal"
+                            data-state=(el.prompter.countdown ? "prompter-slide" : "normal")
+                            data-time=(el.prompter.countdown ? el.prompter.countdown : 0)
                         )
                             include includes/song/prompter.pug
 
@@ -83,6 +92,7 @@ html
                 el.style.display = 'block'
 
                 let state = Reveal.getState()
+                console.log(state)
                 let timeToInit = localStorage.getItem('prompter-' + state.indexh)
                 console.log(timeToInit)
                 c(timeToInit, state.indexh)

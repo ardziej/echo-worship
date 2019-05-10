@@ -46,6 +46,12 @@ let timer
 function c(seconds, id) {
 
     let tSecs = localStorage.getItem('leftTime-' + id)
+    let countdownStyle = localStorage.getItem('prompter-style-' + id)
+    let counter = document.getElementById('countdown')
+    counter.classList.remove("top")
+    counter.classList.remove("center")
+    counter.classList.add(countdownStyle)
+
     if (tSecs) seconds = tSecs
 
     function tick() {

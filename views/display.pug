@@ -31,6 +31,12 @@ html
                                         data-transition-speed="slow"
                                         data-transition="fade-in fade-out"
                                     )
+                                else if slideEl.type === 'announcement'
+                                    section(
+                                        data-background-image='/media/images/' + slideEl.path
+                                        data-transition-speed="slow"
+                                        data-transition="fade-in fade-out"
+                                    )
                                 else if slideEl.type === 'bible'
                                     section(
                                         data-background-image='/media/images/' + slideEl.path

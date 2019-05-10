@@ -190,6 +190,10 @@
 
 
 .prompter #countdown {
+    z-index: 999999;
+}
+
+.prompter #countdown.center {
     text-align: center;
     font-size: 360px;
     padding: 30px;
@@ -197,10 +201,22 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 999999;
     background-color: #000000d4;
     text-shadow: 2px 1px 25px rgba(0, 0, 0, 1);
 }
+
+.prompter #countdown.top {
+    text-align: left;
+    font-size: 200px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background-color: transparent;
+    text-shadow: 2px 1px 25px rgba(0, 0, 0, 1);
+}
+
 
 .prompter #clock {
     font-size: 90px;
@@ -225,8 +241,13 @@
         font-size: 18px;
     }
 
-    .prompter #countdown {
+    .prompter #countdown.center {
         padding: 15px;
+        font-size: 28px;
+    }
+
+    .prompter #countdown.top {
+        padding: 10px;
         font-size: 28px;
     }
 }
@@ -275,5 +296,39 @@
 }
 
 .ui .bible-script {
+    font-size: 100% !important;
+}
+
+.announcement {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto !important;
+    margin-top: 0% !important;
+    padding: 3% !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+}
+
+.announcement-current {
+    text-align: center;
+    letter-spacing: initial !important;;
+    font-size: 110% !important;
+    font-weight: 400 !important;
+    margin: 5% auto;
+}
+
+.announcement-next {
+    text-align: center;
+    letter-spacing: initial !important;;
+    font-size: 90% !important;
+    font-weight: 400 !important;
+    margin: 5% auto;
+}
+
+.ui .announcement-current {
+    font-size: 120% !important;
+}
+
+.ui .announcement-next {
     font-size: 100% !important;
 }

@@ -26,8 +26,8 @@ html
                     each navItem, index in sequence
                         li.sidebar__item
                             a.sidebar__link(
-                            data-menu-title=navItem.name
-                            onclick='slideTo(' + index + ')') #{index + 1}. #{navItem.name}
+                                data-menu-title=navItem.name
+                                onclick='slideTo(' + index + ')') #{index + 1}. #{navItem.name}
             .box.preview-master
                 .reveal
                     .slides
@@ -40,18 +40,23 @@ html
                                         if slideEl.type === 'video'
                                             section
                                                 video(
-                                                controls
-                                                data-autoplay
-                                                muted
+                                                    controls
+                                                    data-autoplay
+                                                    muted
                                                 )
                                                     source(
-                                                    src='/media/videos/' + slideEl.path
-                                                    type="video/mp4"
+                                                        src='/media/videos/' + slideEl.path
+                                                        type="video/mp4"
                                                     )
                                         else if slideEl.type === 'image'
                                             section(
-                                            data-menu-title=slideEl.name
-                                            data-background-image='/media/images/' + slideEl.path
+                                                data-menu-title=slideEl.name
+                                                data-background-image='/media/images/' + slideEl.path
+                                            )
+                                        else if slideEl.type === 'announcement'
+                                            section(
+                                                data-menu-title=slideEl.name
+                                                data-background-image='/media/images/' + slideEl.path
                                             )
                                         else if slideEl.type === 'bible'
                                             section(data-background-image='/media/images/' + slideEl.path)
@@ -67,9 +72,9 @@ html
                                     include includes/song/new.pug
             .box.preview-prompter
                 iframe(
-                width="100%"
-                height="100%"
-                src=url + '/prompter')
+                    width="100%"
+                    height="100%"
+                    src=url + '/prompter')
 
             .box.content(id="content")
                 each el, index in sequence
@@ -86,17 +91,22 @@ html
                                     section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
                                             video.content__thumbnail.content__thumbnail--full(
-                                            loop
-                                            muted
-                                            poster='/media/videos/thumbs/' + slideEl.thumbdir + '/1.jpg'
+                                                loop
+                                                muted
+                                                poster='/media/videos/thumbs/' + slideEl.thumbdir + '/1.jpg'
                                             )
                                                 source(
-                                                src='/media/videos/thumbs/' + slideEl.thumbdir + '/video.mp4'
-                                                type='video/mp4'
+                                                    src='/media/videos/thumbs/' + slideEl.thumbdir + '/video.mp4'
+                                                    type='video/mp4'
                                                 )
                                             =slideEl.name
 
                                 else if slideEl.type === 'image'
+                                    section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
+                                        a(href='#/' + index + '/' + j)
+                                            img.content__thumbnail(src='/media/images/' + slideEl.path)
+                                            =slideEl.name
+                                else if slideEl.type === 'announcement'
                                     section.content__image.content__image--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
                                             img.content__thumbnail(src='/media/images/' + slideEl.path)

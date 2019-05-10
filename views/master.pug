@@ -12,16 +12,21 @@ html
                             each slideEl in el.slides
                                 if slideEl.type === 'video'
                                     section(
-                                    data-menu-title=slideEl.name
-                                    data-background-video='/media/videos/' + slideEl.path,
-                                    data-background-video-muted,
-                                    data-background-video-loop=(!!slideEl.options[0].loop),
-                                    data-autoplay=(!!slideEl.options[0].autoplay)
+                                        data-menu-title=slideEl.name
+                                        data-background-video='/media/videos/' + slideEl.path,
+                                        data-background-video-muted,
+                                        data-background-video-loop=(!!slideEl.options[0].loop),
+                                        data-autoplay=(!!slideEl.options[0].autoplay)
                                     )
                                 else if slideEl.type === 'image'
                                     section(
-                                    data-menu-title=slideEl.name
-                                    data-background-image='/media/images/' + slideEl.path
+                                        data-menu-title=slideEl.name
+                                        data-background-image='/media/images/' + slideEl.path
+                                    )
+                                else if slideEl.type === 'announcement'
+                                    section(
+                                        data-menu-title=slideEl.name
+                                        data-background-image='/media/images/' + slideEl.path
                                     )
                                 else
                                     section= slideEl.type
