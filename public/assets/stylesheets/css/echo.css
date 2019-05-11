@@ -193,14 +193,14 @@
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section .text-next, .song-style-beta-3 section .text-next, .song-style-beta-4 section .text-next {
+.song-style-beta-2 section .text-next, .song-style-beta-3 section .text-next, .song-style-beta-4 section .text-next, .song-style-beta-5 section .text-next {
     animation-name: fadeOut;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section.present .text-next, .song-style-beta-3 section.present .text-next, .song-style-beta-4 section.present .text-next {
+.song-style-beta-2 section.present .text-next, .song-style-beta-3 section.present .text-next, .song-style-beta-4 section.present .text-next, .song-style-beta-5 section.present .text-next {
     opacity: 0;
     font-size: 60% !important;
     /*background-color: #fff;
@@ -211,7 +211,7 @@
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section.present .text-next-hidden, .song-style-beta-3 section.present .text-next-hidden, .song-style-beta-4 section.present .text-next-hidden {
+.song-style-beta-2 section.present .text-next-hidden, .song-style-beta-3 section.present .text-next-hidden, .song-style-beta-4 section.present .text-next-hidden, .song-style-beta-5 section.present .text-next-hidden {
     display: none;
 }
 
