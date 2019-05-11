@@ -34,8 +34,14 @@
     Reveal.addEventListener('paused', post)
     Reveal.addEventListener('resumed', post)
 
-    let btnForceReload = document.getElementById("force-reload")
+    let btnForceReloadLogo = document.getElementById("force-reload-logo")
+    btnForceReloadLogo.addEventListener("click", function (e) {
+        e.preventDefault()
+        socket.emit('echo', {action: 'reload'})
+        location.reload()
+    })
 
+    let btnForceReload = document.getElementById("force-reload")
     btnForceReload.addEventListener("click", function (e) {
         e.preventDefault()
         socket.emit('echo', {action: 'reload'})
