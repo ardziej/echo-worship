@@ -5,9 +5,11 @@ let express = require('express')
 let fs = require('fs')
 let io = require('socket.io')
 let crypto = require('crypto')
+const shell = require('shelljs');
 
 let app = express()
 let server = http.createServer(app)
+
 
 io = io(server)
 
@@ -22,6 +24,15 @@ io.on('connection', function (socket) {
     })
     socket.on('echo', function (data) {
         socket.broadcast.emit('echo', data)
+        console.log(data)
+/*        if (shell.exec('yarn sync').code !== 0) {
+            shell.echo('Error: yarn sync failed');
+            shell.exit(1);
+        }
+        if (shell.exec('yarn demo').code !== 0) {
+            shell.echo('Error: yarn demo failed');
+            shell.exit(1);
+        }*/
     })
 })
 app.get('/', function (req, res) {

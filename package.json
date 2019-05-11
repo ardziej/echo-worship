@@ -16,12 +16,14 @@
     "db-push": "rclone sync -v ./s3/db echo:echo/echo-worship/db --exclude '.gitkeep' --exclude '.DS_Store'",
     "up": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store' && pm2 restart all",
     "s3": "rclone sync -v echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store'",
+    "sync": "rclone sync echo:echo/echo-worship ./s3 --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-push": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'",
     "s3-purge": "rm -rf ./s3/media/*",
     "s3-resync": "yarn s3-purge && yarn s3",
     "s3-sync-remote": "rclone sync -v ./s3 echo:echo/echo-worship --exclude '.gitkeep' --exclude '.DS_Store'",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "demo": "echo 'ECHO'"
   },
   "build": {
     "appId": "weareecho.pl.echo.worship",
@@ -47,6 +49,7 @@
     "express-session": "^1.15.6",
     "mustache": "^2.3.2",
     "pug": "^2.0.3",
+    "shelljs": "^0.8.3",
     "socket.io": "^2.1.1"
   },
   "devDependencies": {

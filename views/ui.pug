@@ -136,7 +136,7 @@ html
                                     img.content__thumbnail(src='/static/assets/images/black.png')
                             each verse, i in el.song.prompterSequence
                                 - var n = i + 1
-                                - var slideClass = 'slide-' + index + '-' + n
+                                 - var slideClass = 'slide-' + index + '-' + n
                                 section.content__song.content__song--border.content__status(class=slideClass)
                                     a(href='#/' + index + '/' + n)
                                         span.song__tag='[' + verse.id.toUpperCase() + ']'
