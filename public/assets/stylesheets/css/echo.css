@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 .reveal {
     width: 100%;
     height: 100%;
@@ -102,6 +104,17 @@
     padding: 10px 40px;
     width: 100%;
     border: 0;
+}
+
+.client .reveal .slides .song-element--style-beta-hog, .ui .reveal .slides .song-element--style-beta-hog {
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    border-bottom: 3px solid #1a716d;
+    padding-bottom: 30px;
 }
 
 .client .reveal .slides section .song-block:first-of-type .song-element--style-4, .ui .reveal .slides section .song-block:first-of-type .song-element--style-4 {
@@ -212,6 +225,29 @@
 }
 
 .song-style-beta-2 section.present .text-next-hidden, .song-style-beta-3 section.present .text-next-hidden, .song-style-beta-4 section.present .text-next-hidden, .song-style-beta-5 section.present .text-next-hidden {
+    display: none;
+}
+
+.song-style-beta-hog section .text-next {
+    font-family: 'Roboto Mono', monospace;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-style-beta-hog section.present .text-next {
+    opacity: 0;
+    font-size: 60% !important;
+    /*background-color: #fff;
+    color: #000;*/
+    animation-name: fadeInEcho;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.song-style-beta-hog section.present .text-next-hidden {
     display: none;
 }
 
