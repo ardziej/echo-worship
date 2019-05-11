@@ -40,6 +40,5 @@
   ],
   "background_color": "#000",
   "start_url": "../",
-  "display": "fullscreen",
-  "orientation": "default"
+  "display": "fullscreen"
 }
