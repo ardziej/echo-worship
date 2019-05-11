@@ -1,26 +1,32 @@
 doctype html
 html
     include includes/head.pug
-    body.ui
+    body.ui#ui
         .wrapper.wrapper-main
             .box.header
-                .header__logo
-                    a(href="javascript:window.location.reload(true)")
-                        img(src='/static/assets/images/echo-logo.svg')
-                nav.header__menu
-                    ul.header__nav
-                        li.nav__item
-                            a(href='#/0/1') WE ARE ECHO
-                        li.nav__item
-                            a(href='#/0/2') SERIA
-                        li.nav__item
-                            a(href='#/0/3') INTRO
-                        li.nav__item
-                            a(href='#/0/5') CROSS
-                        li.nav__item
-                            a(href='#/0/0') BLACKOUT
-                        li.nav__item(id='force-reload')
-                            a(href='#') RESET
+                .header__left#header-panel
+                    button(class="toggle-button toggle-button-left")
+                        ='☰'
+                    .header__logo
+                        a(href="javascript:window.location.reload(true)")
+                            img(src='/static/assets/images/echo-logo.svg')
+                    button(class="toggle-button toggle-button-right")
+                        ='☰'
+                .header__right
+                    nav.header__menu
+                        ul.header__nav
+                            li.nav__item
+                                a(href='#/0/1') WE ARE ECHO
+                            li.nav__item
+                                a(href='#/0/2') SERIA
+                            li.nav__item
+                                a(href='#/0/3') INTRO
+                            li.nav__item
+                                a(href='#/0/5') CROSS
+                            li.nav__item
+                                a(href='#/0/0') BLACKOUT
+                            li.nav__item(id='force-reload')
+                                a(href='#') RESET
             nav.box.sidebar
                 ul.sidebar__nav(id="sidebar__nav")
                     each navItem, index in sequence
@@ -41,6 +47,7 @@ html
                                         if slideEl.type === 'video'
                                             section
                                                 video(
+                                                    disableRemotePlayback
                                                     controls
                                                     data-autoplay
                                                     muted
@@ -92,6 +99,7 @@ html
                                     section.content__video.content__video--border.content__status(class='slide-' + index + '-' + j)
                                         a(href='#/' + index + '/' + j)
                                             video.content__thumbnail.content__thumbnail--full(
+                                                disableRemotePlayback
                                                 loop
                                                 muted
                                                 poster='/media/videos/thumbs/' + slideEl.thumbdir + '/1.jpg'
@@ -184,6 +192,17 @@ html
                     }
                 })
             script.
+                // var slideout = new Slideout({
+                //     'panel': document.getElementById('ui'),
+                //     'menu': document.getElementById('sidebar__nav'),
+                //     'padding': 256,
+                //     'tolerance': 70
+                // });
+                // Toggle button
+                // document.querySelector('.toggle-button-left').addEventListener('click', function () {
+                //     slideout.toggle();
+                // });
+
                 let btnContainer = document.getElementById("content");
                 let btns = btnContainer.getElementsByClassName("content__status");
 
@@ -213,8 +232,10 @@ html
                 }
 
                 function scrollTo(h, v) {
-                    if (v >= 4) {
-                        let vS = v - 4
+                    let step = (window.innerWidth > 601) ? 4 : 2;
+
+                    if (v >= step) {
+                        let vS = v - step
                         let slideToEl = document.getElementsByClassName('slide-' + h + '-' + vS)
                         let el = slideToEl[0]
                         el.scrollIntoView()
