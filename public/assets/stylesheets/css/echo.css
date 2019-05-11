@@ -77,6 +77,33 @@
     margin-top: -20px;
 }
 
+.client .reveal .slides .song-element--style-beta-3, .ui .reveal .slides .song-element--style-beta-3 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    border: 3px solid #fff;
+}
+
+.client .reveal .slides .song-element--style-beta-4, .ui .reveal .slides .song-element--style-beta-4 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 30px;
+}
+
+.client .reveal .slides .song-element--style-beta-5, .ui .reveal .slides .song-element--style-beta-5 {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 40px;
+    width: 100%;
+    border: 0;
+}
+
 .client .reveal .slides section .song-block:first-of-type .song-element--style-4, .ui .reveal .slides section .song-block:first-of-type .song-element--style-4 {
     border: 0;
 }
@@ -166,14 +193,14 @@
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section .text-next {
+.song-style-beta-2 section .text-next, .song-style-beta-3 section .text-next, .song-style-beta-4 section .text-next {
     animation-name: fadeOut;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section.present .text-next {
+.song-style-beta-2 section.present .text-next, .song-style-beta-3 section.present .text-next, .song-style-beta-4 section.present .text-next {
     opacity: 0;
     font-size: 60% !important;
     /*background-color: #fff;
@@ -184,7 +211,7 @@
     animation-fill-mode: forwards;
 }
 
-.song-style-beta-2 section.present .text-next-hidden {
+.song-style-beta-2 section.present .text-next-hidden, .song-style-beta-3 section.present .text-next-hidden, .song-style-beta-4 section.present .text-next-hidden {
     display: none;
 }
 
