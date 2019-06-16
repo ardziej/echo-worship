@@ -316,10 +316,10 @@ animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 .song-style-beta-hog section.present .text-next {
     opacity: 0;
     font-size: 60% !important;
-    /*background-color: #fff;
-    color: #000;*/
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-name: fadeInEcho;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 .song-style-beta-hog section.present .text-next-hidden {
